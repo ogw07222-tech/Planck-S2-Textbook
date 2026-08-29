@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:28px;font-weight:700}.small{font-size:22px}.tiny{font-size:19px}.dom{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.tar{fill:#fff3f3;stroke:#c53030;stroke-width:4}.mark{stroke:#805ad5;stroke-width:10;fill:none}.map{stroke:#555;stroke-width:4;fill:none;marker-end:url(#arr)}.note{fill:#fff8e8;stroke:#d69e2e;stroke-width:2}
+  </style>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F011  degree Q = −1 — orientation을 한 번 뒤집는 대표 예</text>
+  <circle cx="300" cy="330" r="180" class="dom"/>
+  <circle cx="900" cy="330" r="180" class="tar"/>
+  <path d="M225 285 L300 225 L375 285" class="mark"/>
+  <path d="M825 375 L900 435 L975 375" class="mark"/>
+  <text x="300" y="125" text-anchor="middle" class="label">domain S²</text>
+  <text x="900" y="125" text-anchor="middle" class="label">target S²</text>
+  <text x="300" y="535" text-anchor="middle" class="small">표식의 orientation</text>
+  <text x="900" y="535" text-anchor="middle" class="small">거울처럼 뒤집힌 orientation</text>
+  <path d="M480 330 C575 330,625 330,720 330" class="map"/>
+  <text x="600" y="565" text-anchor="middle" class="label">한 번 덮되 orientation을 반전하는 대표 map은 Q=−1</text>
+  <rect x="130" y="600" width="940" height="82" rx="16" class="note"/>
+  <text x="600" y="633" text-anchor="middle" class="small">마이너스 부호는 orientation의 반전을 기록한다.</text>
+  <text x="600" y="664" text-anchor="middle" class="tiny">Q&lt;0은 음의 에너지, 반입자, 음전하를 자동으로 뜻하지 않는다.</text>
+</svg>
