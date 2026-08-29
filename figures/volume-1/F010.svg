@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:28px;font-weight:700}.small{font-size:22px}.tiny{font-size:19px}.dom{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.tar{fill:#eefaf1;stroke:#2f855a;stroke-width:4}.lat1{stroke:#d53f8c;stroke-width:9;fill:none}.lat2{stroke:#d69e2e;stroke-width:9;fill:none}.lat3{stroke:#3182ce;stroke-width:9;fill:none}.map{stroke:#555;stroke-width:4;fill:none;marker-end:url(#arr)}.note{fill:#fff8e8;stroke:#d69e2e;stroke-width:2}
+  </style>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F010  degree Q = +1 — 방향을 보존하며 한 번 덮는 대표 예</text>
+  <circle cx="300" cy="330" r="180" class="dom"/>
+  <circle cx="900" cy="330" r="180" class="tar"/>
+  <ellipse cx="300" cy="255" rx="150" ry="43" class="lat1"/>
+  <ellipse cx="300" cy="330" rx="180" ry="60" class="lat2"/>
+  <ellipse cx="300" cy="410" rx="145" ry="42" class="lat3"/>
+  <ellipse cx="900" cy="255" rx="150" ry="43" class="lat1"/>
+  <ellipse cx="900" cy="330" rx="180" ry="60" class="lat2"/>
+  <ellipse cx="900" cy="410" rx="145" ry="42" class="lat3"/>
+  <text x="300" y="125" text-anchor="middle" class="label">domain S²</text>
+  <text x="900" y="125" text-anchor="middle" class="label">target S²</text>
+  <path d="M465 255 C570 230,630 230,735 255" class="map"/>
+  <path d="M480 330 C575 330,625 330,720 330" class="map"/>
+  <path d="M455 410 C565 435,635 435,745 410" class="map"/>
+  <text x="600" y="550" text-anchor="middle" class="label">identity처럼 orientation을 보존하며 target 전체를 한 번 덮으면 Q=+1</text>
+  <rect x="130" y="590" width="940" height="82" rx="16" class="note"/>
+  <text x="600" y="623" text-anchor="middle" class="small">색띠는 대응을 보기 위한 표식일 뿐 실제 field의 색을 뜻하지 않는다.</text>
+  <text x="600" y="654" text-anchor="middle" class="tiny">Q=+1은 전하 −e, 1 bit, 혹은 전자 하나라는 뜻이 아니다.</text>
+</svg>
