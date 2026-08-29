@@ -14,7 +14,7 @@ jobs:
       - name: Install ebook toolchain
         run: |
           sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y pandoc texlive-xetex texlive-lang-korean texlive-latex-extra fonts-noto-cjk librsvg2-bin
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y pandoc texlive-xetex texlive-lang-korean texlive-latex-extra fonts-noto-cjk librsvg2-bin mupdf-tools
 
       - name: Build reader edition source and assets
         run: |
@@ -26,7 +26,6 @@ jobs:
           root = Path('.')
           v1 = root / 'volume-1'
           out = root / 'build' / 'volume1-ebook'
-
           chapter_names = [
               '01-particle.md','02-dimension.md','03-circle-sphere.md','04-function.md',
               '05-field.md','06-s2-to-s2.md','07-degree-q.md','08-q1-meaning.md',
@@ -41,8 +40,7 @@ jobs:
                   lines.pop(0)
               text = '\n'.join(lines).strip() + '\n'
               lines = text.splitlines()
-              cleaned = []
-              skipping = False
+              cleaned, skipping = [], False
               for line in lines:
                   if re.match(r'^##\s+(제\d+장 제작 기록|제1권 마무리 제작 기록)\s*$', line):
                       skipping = True
@@ -94,16 +92,12 @@ jobs:
           \\clearpage
           '''
           front = '\n'.join(x[10:] if x.startswith('          ') else x for x in front.splitlines())
-
           merged = [front]
           for i, name in enumerate(chapter_names):
-              text = (v1 / name).read_text(encoding='utf-8')
-              merged.append(reader_clean(text))
+              merged.append(reader_clean((v1 / name).read_text(encoding='utf-8')))
               if i != len(chapter_names)-1:
                   merged.append('\n\\clearpage\n')
-
-          combined = '\n\n'.join(merged)
-          combined = combined.replace('../figures/volume-1/', '../../figures/volume-1/')
+          combined = '\n\n'.join(merged).replace('../figures/volume-1/', '../../figures/volume-1/')
           (out / 'volume1_reader.md').write_text(combined, encoding='utf-8')
           (out / 'volume1_reader_pdf.md').write_text(combined.replace('.svg)', '.png)'), encoding='utf-8')
           PY
@@ -115,7 +109,7 @@ jobs:
       - name: Create cover and style files
         run: |
           cat > build/volume1-ebook/cover.svg <<'SVG'
-          <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2560" viewBox="0 0 1600 2560">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2269" viewBox="0 0 1600 2269">
             <defs>
               <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#071a2d"/>
@@ -127,22 +121,23 @@ jobs:
                 <stop offset="1" stop-color="#9ed7ff" stop-opacity="0"/>
               </radialGradient>
             </defs>
-            <rect width="1600" height="2560" fill="url(#bg)"/>
-            <circle cx="800" cy="1120" r="560" fill="url(#orb)"/>
-            <circle cx="800" cy="1120" r="355" fill="none" stroke="#c5e7ff" stroke-width="3" opacity="0.7"/>
-            <ellipse cx="800" cy="1120" rx="355" ry="120" fill="none" stroke="#c5e7ff" stroke-width="3" opacity="0.45"/>
-            <ellipse cx="800" cy="1120" rx="120" ry="355" fill="none" stroke="#c5e7ff" stroke-width="3" opacity="0.45"/>
-            <text x="800" y="410" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="58" fill="#a9d9ff" letter-spacing="7">PLANCK-S²</text>
-            <text x="800" y="560" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="76" font-weight="700" fill="white">처음부터 이해하는 책</text>
-            <text x="800" y="720" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="52" fill="#d5edff">제1권</text>
-            <text x="800" y="800" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="48" fill="#d5edff">구 위의 화살표에서 위상수학까지</text>
-            <text x="800" y="1940" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="34" fill="#d5edff">Reader Edition · Independent Audit PASS</text>
-            <text x="800" y="2010" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="30" fill="#a9d9ff">WORKING HYPOTHESIS</text>
-            <line x1="470" y1="2100" x2="1130" y2="2100" stroke="#a9d9ff" opacity="0.45"/>
-            <text x="800" y="2190" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="28" fill="#cbe7fb">2026-08-29</text>
+            <rect width="1600" height="2269" fill="url(#bg)"/>
+            <circle cx="800" cy="1040" r="530" fill="url(#orb)"/>
+            <circle cx="800" cy="1040" r="345" fill="none" stroke="#c5e7ff" stroke-width="3" opacity="0.7"/>
+            <ellipse cx="800" cy="1040" rx="345" ry="118" fill="none" stroke="#c5e7ff" stroke-width="3" opacity="0.45"/>
+            <ellipse cx="800" cy="1040" rx="118" ry="345" fill="none" stroke="#c5e7ff" stroke-width="3" opacity="0.45"/>
+            <text x="800" y="340" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="58" fill="#a9d9ff" letter-spacing="7">PLANCK-S²</text>
+            <text x="800" y="480" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="76" font-weight="700" fill="white">처음부터 이해하는 책</text>
+            <text x="800" y="625" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="52" fill="#d5edff">제1권</text>
+            <text x="800" y="700" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="48" fill="#d5edff">구 위의 화살표에서 위상수학까지</text>
+            <text x="800" y="1780" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="34" fill="#d5edff">Reader Edition · Independent Audit PASS</text>
+            <text x="800" y="1850" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="30" fill="#a9d9ff">WORKING HYPOTHESIS</text>
+            <line x1="470" y1="1940" x2="1130" y2="1940" stroke="#a9d9ff" opacity="0.45"/>
+            <text x="800" y="2020" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="28" fill="#cbe7fb">2026-08-29</text>
           </svg>
           SVG
-          rsvg-convert -w 1600 -h 2560 build/volume1-ebook/cover.svg -o build/volume1-ebook/cover.png
+          rsvg-convert -w 1600 -h 2269 build/volume1-ebook/cover.svg -o build/volume1-ebook/cover.png
+          rsvg-convert -f pdf -w 419.528 -h 595.276 build/volume1-ebook/cover.svg -o build/volume1-ebook/cover.pdf
 
           cat > build/volume1-ebook/ebook_header.tex <<'TEX'
           \usepackage{xcolor}
@@ -177,7 +172,6 @@ jobs:
           \fancyfoot[C]{\small\thepage}
           \renewcommand{\headrulewidth}{0.3pt}
           \AtBeginEnvironment{quote}{\color{Ink}\small}
-          \hypersetup{pdfauthor={Planck-S² Research Project},pdftitle={Planck-S²를 처음부터 이해하는 책 - 제1권}}
           TEX
 
           cat > build/volume1-ebook/ebook.css <<'CSS'
@@ -209,7 +203,8 @@ jobs:
             -V colorlinks=true \
             -V linkcolor=blue \
             -V urlcolor=blue \
-            -o Planck-S2_Volume1_Reader_Edition.pdf
+            -o body.pdf
+          mutool merge -o Planck-S2_Volume1_Reader_Edition.pdf cover.pdf body.pdf
 
       - name: Build EPUB
         run: |
