@@ -11,20 +11,20 @@
 | 5 | DRAFT COMPLETE | PASS |
 | 6 | DRAFT COMPLETE | PASS |
 | 7 | DRAFT COMPLETE | PASS |
-| 8 | DRAFT COMPLETE | REVISE — FOOTNOTE COMPLETION |
-| 9 | NOT STARTED | — |
-| 10 | NOT STARTED | — |
-| 11 | NOT STARTED | — |
-| 12 | NOT STARTED | — |
+| 8 | DRAFT COMPLETE | AUDIT PENDING |
+| 9 | DRAFT COMPLETE | AUDIT PENDING |
+| 10 | DRAFT COMPLETE | AUDIT PENDING |
+| 11 | DRAFT COMPLETE | AUDIT PENDING |
+| 12 | DRAFT COMPLETE | AUDIT PENDING |
 | 13 | NOT STARTED | — |
 | 14 | NOT STARTED | — |
 | 15 | NOT STARTED | — |
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Add Chapter 8 specialist-term footnotes, then re-run the independent Chapter 8 audit. Scientific/content audit already passes; the remaining blocker is editorial footnote completion.
+**Current next action:** Independent sequential audit of Chapters 8–12.
 
-**DO NOT START:** Chapter 9 before Chapter 8 independent audit passes.
+**DO NOT START:** Chapter 13 before the overnight batch audit is completed.
 
 ## Canonical status rule
 
