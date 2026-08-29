@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:36px;font-weight:700}.h{font-size:28px;font-weight:700}.b{font-size:22px}.s{font-size:18px}.box{fill:#f7fafc;stroke:#4a5568;stroke-width:3}.accent{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.warn{fill:#fff8e6;stroke:#b7791f;stroke-width:3}.arrow{stroke:#2d3748;stroke-width:4;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2d3748"/></marker></defs>
+  <text x="640" y="52" text-anchor="middle" class="title">F013  한 점, 한 값, 장 전체, configuration-space의 한 점</text>
+  <rect x="55" y="130" width="240" height="190" rx="20" class="box"/>
+  <text x="175" y="178" text-anchor="middle" class="h">domain point</text>
+  <text x="175" y="225" text-anchor="middle" class="h">x</text>
+  <text x="175" y="270" text-anchor="middle" class="b">값을 읽을 위치 하나</text>
+
+  <rect x="360" y="130" width="240" height="190" rx="20" class="box"/>
+  <text x="480" y="178" text-anchor="middle" class="h">field value</text>
+  <text x="480" y="225" text-anchor="middle" class="h">n(x)</text>
+  <text x="480" y="270" text-anchor="middle" class="b">그 위치의 값 하나</text>
+
+  <rect x="665" y="130" width="240" height="190" rx="20" class="accent"/>
+  <text x="785" y="178" text-anchor="middle" class="h">full field</text>
+  <text x="785" y="225" text-anchor="middle" class="h">n 또는 n(·)</text>
+  <text x="785" y="270" text-anchor="middle" class="b">모든 x의 값 전체</text>
+
+  <rect x="970" y="130" width="255" height="190" rx="20" class="accent"/>
+  <text x="1098" y="178" text-anchor="middle" class="h">configuration</text>
+  <text x="1098" y="225" text-anchor="middle" class="h">한 배치 n</text>
+  <text x="1098" y="270" text-anchor="middle" class="b">모델 상태 하나</text>
+
+  <path d="M295 225 L350 225" class="arrow"/><path d="M600 225 L655 225" class="arrow"/><path d="M905 225 L960 225" class="arrow"/>
+
+  <rect x="250" y="410" width="780" height="150" rx="22" class="warn"/>
+  <text x="640" y="458" text-anchor="middle" class="h">configuration space에서</text>
+  <text x="640" y="505" text-anchor="middle" class="b">장 전체 n 하나를 다시 “점 하나”처럼 취급할 수 있다.</text>
+  <text x="640" y="540" text-anchor="middle" class="s">이 ‘점’은 domain의 점 x와 전혀 다른 층의 표현이다.</text>
+  <path d="M1098 320 C1098 380 970 430 1038 485" class="arrow"/>
+
+  <text x="640" y="630" text-anchor="middle" class="b">x  ≠  n(x)  ≠  n이라는 전체 배치</text>
+  <text x="640" y="670" text-anchor="middle" class="s">다만 full field n과 configuration은 이 장의 후보 모델에서는 같은 전체 배치를 서로 다른 관점에서 부르는 말이다.</text>
+  <text x="640" y="716" text-anchor="middle" class="s">개념도 — 실제 전자 내부구조나 실제 configuration space의 기하를 그린 그림이 아님</text>
+</svg>
