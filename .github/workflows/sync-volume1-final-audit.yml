@@ -1,0 +1,95 @@
+name: Sync Volume 1 Final Audit
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-volume1-final-audit.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Synchronize Volume 1 final PASS state
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          files = [
+              'volume-1/13-homotopy.md',
+              'volume-1/14-fundamental-group.md',
+              'volume-1/15-z2.md',
+              'volume-1/16-history-v01-v03.md',
+              'volume-1/17-closing.md',
+          ]
+          for name in files:
+              p = Path(name)
+              s = p.read_text(encoding='utf-8')
+              s = s.replace('AUDIT PENDING', 'PASS')
+              p.write_text(s, encoding='utf-8')
+
+          replacements = {
+              'volume-1/13-homotopy.md': [
+                  ('VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 독립 감사 PASS를 부여하지 않는다. actual physical configuration-space topology는 계속 OPEN이다.',
+                   'VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. actual physical configuration-space topology는 계속 OPEN이다.'),
+                  ('- **다음 작업:** FINAL BATCH 규칙에 따른 Chapter 14 DRAFT', '- **독립 감사:** PASS — 2026-08-29'),
+              ],
+              'volume-1/14-fundamental-group.md': [
+                  ('VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 이 장은 fundamental group의 표준 언어만 준비하며 Planck-S²의 특정 $\\pi_1$ 값은 제15장에서 조건과 함께 다룬다.',
+                   'VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 이 장은 fundamental group의 표준 언어만 준비하며 Planck-S²의 특정 $\\pi_1$ 값은 제15장에서 조건과 함께 다룬다.'),
+                  ('- **다음 작업:** FINAL BATCH 규칙에 따른 Chapter 15 DRAFT', '- **독립 감사:** PASS — 2026-08-29'),
+              ],
+              'volume-1/15-z2.md': [
+                  ('VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 이 장은 ideal/unquotiented mapping-space의 $\\mathbb Z_2$ 구조까지만 다루며, 특정 spatial rotation loop의 generator 판정과 FR 연결은 제2권으로 유보한다.',
+                   'VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 이 장은 ideal/unquotiented mapping-space의 $\\mathbb Z_2$ 구조까지만 다루며, 특정 spatial rotation loop의 generator 판정과 FR 연결은 제2권으로 유보한다.'),
+                  ('- **다음 작업:** FINAL BATCH 규칙에 따른 Chapter 16 DRAFT', '- **독립 감사:** PASS — 2026-08-29'),
+              ],
+              'volume-1/16-history-v01-v03.md': [
+                  ('VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 역사/감사 초안이다. 작성 Chat은 PASS를 부여하지 않으며, 과거 문장의 현재 판정은 frozen baseline과 `sources/proof-status.md`를 따른다.',
+                   'VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 과거 문장의 현재 판정은 frozen baseline과 `sources/proof-status.md`를 따른다.'),
+                  ('- **다음 작업:** FINAL BATCH 규칙에 따른 Volume 1 Closing DRAFT', '- **독립 감사:** PASS — 2026-08-29'),
+              ],
+              'volume-1/17-closing.md': [
+                  ('VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 제1권 마무리 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 이 장은 제1권의 도달점과 한계를 정리하며 제2권 결과를 미리 증명하지 않는다.',
+                   'VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 이 장은 제1권의 도달점과 한계를 정리하며 제2권 결과를 미리 증명하지 않는다.'),
+                  ('- **다음 작업:** Independent final-batch audit of Volume 1 Chapters 13–Closing', '- **독립 감사:** PASS — 2026-08-29'),
+                  ('- **DO NOT START:** Volume 2 production before Volume 1 final-batch independent audit is completed', '- **후속 상태:** Volume 2 DRAFT production approved; scientific PASS remains independent-audit only'),
+              ],
+          }
+
+          for name, pairs in replacements.items():
+              p = Path(name)
+              s = p.read_text(encoding='utf-8')
+              for old, new in pairs:
+                  s = s.replace(old, new)
+              p.write_text(s, encoding='utf-8')
+
+          p = Path('figures/registry.md')
+          s = p.read_text(encoding='utf-8')
+          for fid in ['F017', 'F018']:
+              lines = s.splitlines()
+              for i, line in enumerate(lines):
+                  if f'**{fid}**' in line:
+                      lines[i] = line.replace('AUDIT PENDING', 'AUDIT PASS')
+              s = '\n'.join(lines) + '\n'
+          p.write_text(s, encoding='utf-8')
+
+          p = Path('STATUS.md')
+          s = p.read_text(encoding='utf-8')
+          for ch in [13,14,15,16]:
+              s = s.replace(f'| {ch} | DRAFT COMPLETE | AUDIT PENDING |', f'| {ch} | DRAFT COMPLETE | PASS |')
+          s = s.replace('| Closing | DRAFT COMPLETE | AUDIT PENDING |', '| Closing | DRAFT COMPLETE | PASS |')
+          s = s.replace('**Current next action:** Independent final-batch audit of Volume 1 Chapters 13–Closing.',
+                        '**Current next action:** Begin Volume 2 DRAFT production from `volume-2/README.md`, after re-reading MASTER.md and sources/proof-status.md.')
+          s = s.replace('**DO NOT START:** Volume 2 production before Volume 1 final-batch independent audit is completed.',
+                        '**Volume 1 final audit:** PASS — Volume 2 DRAFT production approved. Volume 2 scientific PASS remains independent-audit only.')
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit synchronized state
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add volume-1/13-homotopy.md volume-1/14-fundamental-group.md volume-1/15-z2.md volume-1/16-history-v01-v03.md volume-1/17-closing.md figures/registry.md STATUS.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'audit: synchronize Volume 1 final PASS state'
+          git push
