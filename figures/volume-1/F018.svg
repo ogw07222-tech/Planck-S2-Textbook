@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="white"/>
+<style>
+text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:34px;font-weight:700}.h{font-size:27px;font-weight:700}.b{font-size:21px}.s{font-size:17px}.box{fill:#f8fafc;stroke:#475569;stroke-width:3}.accent{fill:#eff6ff;stroke:#2563eb;stroke-width:4}.warn{fill:#fff7ed;stroke:#c2410c;stroke-width:3}.arrow{stroke:#334155;stroke-width:5;fill:none;marker-end:url(#a)}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker></defs>
+<text x="640" y="55" text-anchor="middle" class="title">F018 · Z₂의 두 원소와 합성 규칙</text>
+<rect x="110" y="115" width="430" height="260" rx="22" class="box"/>
+<rect x="740" y="115" width="430" height="260" rx="22" class="accent"/>
+<text x="325" y="165" text-anchor="middle" class="h">0 · identity class</text>
+<text x="955" y="165" text-anchor="middle" class="h">1 · nontrivial class</text>
+<text x="325" y="225" text-anchor="middle" class="b">trivial / constant-loop 쪽 class</text>
+<text x="955" y="225" text-anchor="middle" class="b">generator가 대표하는 다른 class</text>
+<text x="325" y="300" text-anchor="middle" class="b">0 + 0 = 0</text>
+<text x="955" y="300" text-anchor="middle" class="b">1 + 1 = 0</text>
+<path d="M955 390 C955 470 640 470 640 530" class="arrow"/>
+<text x="640" y="445" text-anchor="middle" class="h">nontrivial element를 두 번 합성 → identity</text>
+<rect x="120" y="545" width="1040" height="145" rx="18" class="warn"/>
+<text x="640" y="585" text-anchor="middle" class="h">Z₂의 0/1은 quantum phase ±1 그 자체가 아니다</text>
+<text x="640" y="625" text-anchor="middle" class="b">±1 representation/character는 추가적인 양자화 구조를 선택할 때 등장한다.</text>
+<text x="640" y="658" text-anchor="middle" class="s">또한 이 그림만으로 2π rotation, spin-1/2, electron identity가 따라오지 않는다.</text>
+</svg>
