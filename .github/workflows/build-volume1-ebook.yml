@@ -36,12 +36,10 @@ jobs:
           ]
 
           def reader_clean(text: str) -> str:
-              # Reader edition only: remove pre-heading workflow banner.
               lines = text.splitlines()
               while lines and not lines[0].startswith('# '):
                   lines.pop(0)
               text = '\n'.join(lines).strip() + '\n'
-              # Remove repository-only production record sections, preserving footnote definitions.
               lines = text.splitlines()
               cleaned = []
               skipping = False
@@ -77,11 +75,11 @@ jobs:
           toc: true
           toc-depth: 2
           colorlinks: true
-          linkcolor: MidnightBlue
-          urlcolor: MidnightBlue
+          linkcolor: blue
+          urlcolor: blue
           CJKmainfont: "Noto Sans CJK KR"
-          mainfont: "Noto Sans"
-          sansfont: "Noto Sans"
+          mainfont: "Noto Sans CJK KR"
+          sansfont: "Noto Sans CJK KR"
           ---
 
           # 독자판 안내
@@ -105,14 +103,9 @@ jobs:
                   merged.append('\n\\clearpage\n')
 
           combined = '\n\n'.join(merged)
-          # Combined file lives in volume-1 conceptually; rewrite image paths for build directory.
           combined = combined.replace('../figures/volume-1/', '../../figures/volume-1/')
           (out / 'volume1_reader.md').write_text(combined, encoding='utf-8')
-
-          # PDF engine cannot reliably include raw SVG without extra shell-escape; make PNG siblings.
-          # Conversion itself happens in shell after this script; point PDF/EPUB source to PNG for consistency.
-          pdf_text = combined.replace('.svg)', '.png)')
-          (out / 'volume1_reader_pdf.md').write_text(pdf_text, encoding='utf-8')
+          (out / 'volume1_reader_pdf.md').write_text(combined.replace('.svg)', '.png)'), encoding='utf-8')
           PY
 
           for f in figures/volume-1/*.svg; do
@@ -163,7 +156,6 @@ jobs:
           \usepackage{enumitem}
           \definecolor{Ink}{HTML}{13283B}
           \definecolor{Accent}{HTML}{1E5A85}
-          \definecolor{Soft}{HTML}{EEF5FA}
           \setstretch{1.22}
           \setlength{\parindent}{0pt}
           \setlength{\parskip}{0.55em}
@@ -173,8 +165,8 @@ jobs:
           \setlist[enumerate]{itemsep=0.25em,topsep=0.35em}
           \titleformat{\chapter}[display]
             {\normalfont\bfseries\color{Ink}}
-            {\filleft\Large\color{Accent}\chaptertitlename\ \thechapter}
-            {0.5ex}
+            {}
+            {0pt}
             {\titlerule\vspace{1.2ex}\Huge}
           \titleformat{\section}{\Large\bfseries\color{Ink}}{}{0pt}{}
           \titleformat{\subsection}{\large\bfseries\color{Accent}}{}{0pt}{}
@@ -212,11 +204,11 @@ jobs:
             --top-level-division=chapter \
             --include-in-header=ebook_header.tex \
             -V CJKmainfont='Noto Sans CJK KR' \
-            -V mainfont='Noto Sans' \
-            -V monofont='Noto Sans Mono CJK KR' \
+            -V mainfont='Noto Sans CJK KR' \
+            -V sansfont='Noto Sans CJK KR' \
             -V colorlinks=true \
-            -V linkcolor=MidnightBlue \
-            -V urlcolor=MidnightBlue \
+            -V linkcolor=blue \
+            -V urlcolor=blue \
             -o Planck-S2_Volume1_Reader_Edition.pdf
 
       - name: Build EPUB
