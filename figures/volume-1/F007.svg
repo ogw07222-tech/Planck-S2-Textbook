@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:29px;font-weight:700}.small{font-size:23px}.tiny{font-size:19px}.sphereA{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.sphereB{fill:#eefaf1;stroke:#2f855a;stroke-width:4}.gridA{stroke:#a7c3e3;stroke-width:2;fill:none}.gridB{stroke:#a7d5b0;stroke-width:2;fill:none}.map{stroke:#555;stroke-width:4;fill:none;marker-end:url(#arr)}.ptA{fill:#2b6cb0}.ptB{fill:#2f855a}.note{fill:#fff8e8;stroke:#d69e2e;stroke-width:2}
+  </style>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F007  S² → S² : 같은 모양, 다른 역할</text>
+
+  <text x="270" y="120" text-anchor="middle" class="label">domain S²</text>
+  <text x="270" y="153" text-anchor="middle" class="small">입력 x를 고르는 구면</text>
+  <circle cx="270" cy="355" r="175" class="sphereA"/>
+  <ellipse cx="270" cy="355" rx="175" ry="62" class="gridA"/>
+  <path d="M270 180 C205 245,205 465,270 530 M270 180 C335 245,335 465,270 530" class="gridA"/>
+  <circle cx="210" cy="292" r="9" class="ptA"/><text x="160" y="282" class="small">x₁</text>
+  <circle cx="320" cy="405" r="9" class="ptA"/><text x="340" y="420" class="small">x₂</text>
+  <circle cx="250" cy="470" r="9" class="ptA"/><text x="185" y="500" class="small">x₃</text>
+
+  <text x="930" y="120" text-anchor="middle" class="label">target S²</text>
+  <text x="930" y="153" text-anchor="middle" class="small">가능한 단위방향 값들의 구면</text>
+  <circle cx="930" cy="355" r="175" class="sphereB"/>
+  <ellipse cx="930" cy="355" rx="175" ry="62" class="gridB"/>
+  <path d="M930 180 C865 245,865 465,930 530 M930 180 C995 245,995 465,930 530" class="gridB"/>
+  <circle cx="875" cy="280" r="9" class="ptB"/><text x="830" y="264" class="small">n(x₁)</text>
+  <circle cx="995" cy="382" r="9" class="ptB"/><text x="1010" y="398" class="small">n(x₂)</text>
+  <circle cx="905" cy="455" r="9" class="ptB"/><text x="840" y="490" class="small">n(x₃)</text>
+
+  <path d="M385 286 C550 210,665 205,805 278" class="map"/>
+  <path d="M395 405 C555 405,650 405,805 382" class="map"/>
+  <path d="M390 480 C545 555,675 530,810 458" class="map"/>
+  <text x="600" y="220" text-anchor="middle" class="label">n : S²_domain → S²_target</text>
+  <text x="600" y="252" text-anchor="middle" class="small">x ↦ n(x)</text>
+
+  <rect x="225" y="590" width="750" height="82" rx="14" class="note"/>
+  <text x="600" y="623" text-anchor="middle" class="small">두 S²는 수학적으로 같은 종류의 구면일 수 있지만 역할은 다르다.</text>
+  <text x="600" y="654" text-anchor="middle" class="small">이 그림은 실제 공간에 두 개의 물질 구가 나란히 존재한다는 뜻이 아니다.</text>
+</svg>
