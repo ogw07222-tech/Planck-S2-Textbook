@@ -11,7 +11,7 @@
 | 5 | DRAFT COMPLETE | PASS |
 | 6 | DRAFT COMPLETE | PASS |
 | 7 | DRAFT COMPLETE | PASS |
-| 8 | NOT STARTED | — |
+| 8 | DRAFT COMPLETE | AUDIT PENDING |
 | 9 | NOT STARTED | — |
 | 10 | NOT STARTED | — |
 | 11 | NOT STARTED | — |
@@ -22,7 +22,7 @@
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Draft Chapter 8 — Q=1이 말해 주는 것과 말해 주지 않는 것을 분리한다.
+**Current next action:** Independent audit of Chapter 8.
 
 **DO NOT START:** Chapter 9 before Chapter 8 independent audit passes.
 
