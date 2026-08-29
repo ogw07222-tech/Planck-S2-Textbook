@@ -8,7 +8,7 @@
 | 2 | DRAFT COMPLETE | PASS |
 | 3 | DRAFT COMPLETE | PASS |
 | 4 | DRAFT COMPLETE | PASS |
-| 5 | NOT STARTED | — |
+| 5 | DRAFT COMPLETE | AUDIT PENDING |
 | 6 | NOT STARTED | — |
 | 7 | NOT STARTED | — |
 | 8 | NOT STARTED | — |
@@ -22,7 +22,7 @@
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Draft Chapter 5 — 「장(field)은 공간의 모든 점에 값을 붙인다」.
+**Current next action:** Independent audit of Chapter 5.
 
 **DO NOT START:** Chapter 6 before Chapter 5 independent audit passes.
 
