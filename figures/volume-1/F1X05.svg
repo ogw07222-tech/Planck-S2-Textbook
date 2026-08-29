@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.head{font-size:30px;font-weight:700}.label{font-size:25px;font-weight:700}.small{font-size:21px}.tiny{font-size:18px}.yes{fill:#eefaf1;stroke:#2f855a;stroke-width:3}.no{fill:#fff3f3;stroke:#c53030;stroke-width:3}.center{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.lineY{stroke:#2f855a;stroke-width:5;fill:none;marker-end:url(#gy)}.lineN{stroke:#c53030;stroke-width:5;fill:none;marker-end:url(#rn)}
+  </style>
+  <defs>
+    <marker id="gy" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2f855a"/></marker>
+    <marker id="rn" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c53030"/></marker>
+  </defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F1X05  Q=1이 말하는 것 / 말하지 않는 것</text>
+
+  <rect x="430" y="105" width="340" height="135" rx="24" class="center"/>
+  <text x="600" y="155" text-anchor="middle" class="head">Q = 1</text>
+  <text x="600" y="193" text-anchor="middle" class="small">degree가 +1인 S²→S² map sector</text>
+  <text x="600" y="222" text-anchor="middle" class="tiny">위상적 분류값</text>
+
+  <rect x="65" y="315" width="440" height="315" rx="24" class="yes"/>
+  <text x="285" y="360" text-anchor="middle" class="head">✓ 말할 수 있는 것</text>
+  <text x="105" y="415" class="label">• degree가 +1이다.</text>
+  <text x="105" y="460" class="label">• orientation을 포함한 전역 감김 정보다.</text>
+  <text x="105" y="505" class="label">• 연속변형으로 보존되는 위상적 분류다.</text>
+  <text x="105" y="550" class="small">(표준 degree 이론의 범위)</text>
+
+  <rect x="695" y="315" width="440" height="315" rx="24" class="no"/>
+  <text x="915" y="360" text-anchor="middle" class="head">✗ 자동으로 말할 수 없는 것</text>
+  <text x="735" y="415" class="label">• 1 bit</text>
+  <text x="735" y="460" class="label">• electric charge −e</text>
+  <text x="735" y="505" class="label">• 전자 한 개 / electron identity</text>
+  <text x="735" y="550" class="label">• spin-1/2, 질량, 반지름, QED</text>
+
+  <path d="M500 240 C420 270,365 285,325 315" class="lineY"/>
+  <path d="M700 240 C780 270,835 285,875 315" class="lineN"/>
+
+  <text x="600" y="688" text-anchor="middle" class="small">같은 숫자 ‘1’이 보여도 정의가 다른 양은 서로 같은 물리량이 아니다.</text>
+  <text x="600" y="724" text-anchor="middle" class="tiny">개념도 — 이 그림은 실제 전자 내부구조의 관측도나 물리적 완성 이론을 뜻하지 않는다.</text>
+</svg>
