@@ -11,7 +11,7 @@
 | 5 | DRAFT COMPLETE | PASS |
 | 6 | DRAFT COMPLETE | PASS |
 | 7 | DRAFT COMPLETE | PASS |
-| 8 | DRAFT COMPLETE | AUDIT PENDING |
+| 8 | DRAFT COMPLETE | REVISE — FOOTNOTE COMPLETION |
 | 9 | NOT STARTED | — |
 | 10 | NOT STARTED | — |
 | 11 | NOT STARTED | — |
@@ -22,7 +22,7 @@
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Independent audit of Chapter 8.
+**Current next action:** Add Chapter 8 specialist-term footnotes, then re-run the independent Chapter 8 audit. Scientific/content audit already passes; the remaining blocker is editorial footnote completion.
 
 **DO NOT START:** Chapter 9 before Chapter 8 independent audit passes.
 
