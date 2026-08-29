@@ -9,7 +9,7 @@
 | 3 | DRAFT COMPLETE | PASS |
 | 4 | DRAFT COMPLETE | PASS |
 | 5 | DRAFT COMPLETE | PASS |
-| 6 | DRAFT COMPLETE | AUDIT PENDING |
+| 6 | DRAFT COMPLETE | PASS |
 | 7 | NOT STARTED | — |
 | 8 | NOT STARTED | — |
 | 9 | NOT STARTED | — |
@@ -22,9 +22,9 @@
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Independent audit of Chapter 6.
+**Current next action:** Draft Chapter 7 — degree Q의 의미와 S²→S² map의 전역 분류를 설명한다.
 
-**DO NOT START:** Chapter 7 before Chapter 6 independent audit passes.
+**DO NOT START:** Chapter 8 before Chapter 7 independent audit passes.
 
 ## Canonical status rule
 
