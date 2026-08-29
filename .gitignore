@@ -1,0 +1,10 @@
+# Legacy/editable publication binaries are not canonical sources
+*.docx
+*.doc
+*.pdf
+
+# Local conversion/build scratch
+.tmp/
+build/
+.DS_Store
+Thumbs.db
