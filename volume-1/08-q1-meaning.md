@@ -226,7 +226,7 @@ $Q$는 map을 위상적으로 분류하는 degree다. 그 숫자가 1이라고 �
 - electric charge $-e$
 - electron identity
 - spin-1/2
-- 질량, 반지름, QED 성질
+- 질량, 반지름, QED[^v1c08-qed] 성질
 
 ### [이 그림이 뜻하는 것]
 
@@ -276,7 +276,7 @@ $$
 I=\log_2 d
 $$
 
-처럼 쓸 수 있다.
+처럼 쓸 수 있다.[^v1c08-log-state-count]
 
 예를 들어 $d=2$이면
 
@@ -352,7 +352,7 @@ $$
 
 이라고 읽어야 한다.
 
-물론 어떤 특정 이론에서 topological charge 하나를 soliton 하나와 연결하는 구조가 있을 수 있다. 그러나 그 경우에도 **그 연결은 별도의 이론적 정의와 동역학을 통해 증명해야 한다.** 숫자 1이 같기 때문에 자동으로 생기는 연결이 아니다.
+물론 어떤 특정 이론에서 topological charge[^v1c08-topological-charge] 하나를 soliton[^v1c08-soliton] 하나와 연결하는 구조가 있을 수 있다. 그러나 그 경우에도 **그 연결은 별도의 이론적 정의와 동역학을 통해 증명해야 한다.** 숫자 1이 같기 때문에 자동으로 생기는 연결이 아니다.
 
 ---
 
@@ -374,7 +374,7 @@ canonical proof ledger는 현재 다음을 고정한다.
 
 > $Q=1$이라는 topological degree만 보고, 별도의 상태공간 계산 없이 곧바로 정보량이 1 bit라고 결론내리는 문장은 그대로는 틀렸다.
 
-정보량을 말하려면 적어도 무엇을 상태로 세는지, 어떤 Hilbert space 또는 유효 상태공간을 사용하는지, 독립 상태가 몇 개인지 등을 별도로 정해야 한다.
+정보량을 말하려면 적어도 무엇을 상태로 세는지, 어떤 Hilbert space[^v1c08-hilbert-space] 또는 유효 상태공간을 사용하는지, 독립 상태가 몇 개인지 등을 별도로 정해야 한다.
 
 이 문제는 뒤의 제3권에서 rotor state counting과 함께 더 깊게 다룬다.
 
@@ -384,7 +384,7 @@ canonical proof ledger는 현재 다음을 고정한다.
 
 전기전하는 단순한 정수 라벨이 아니다.
 
-실제 전자 이론에서 charge $-e$를 설명하려면 적어도 전자기적 $U(1)$ 구조와 그 장에 대한 coupling을 다뤄야 한다.
+실제 전자 이론에서 charge $-e$를 설명하려면 적어도 전자기적 $U(1)$[^v1c08-em-u1] 구조와 그 장에 대한 coupling[^v1c08-coupling]을 다뤄야 한다.
 
 Planck-S²의 현재 frozen baseline에서 $Q$는
 
@@ -396,8 +396,8 @@ map의 degree다.
 
 그러나 전자기적 charge를 얻으려면 다음과 같은 질문이 추가로 필요하다.
 
-- 어떤 $U(1)$ gauge field와 결합하는가?
-- 그 coupling constant는 어떻게 정해지는가?
+- 어떤 $U(1)$ gauge field[^v1c08-gauge-field]와 결합하는가?
+- 그 coupling constant[^v1c08-coupling-constant]는 어떻게 정해지는가?
 - 왜 전하의 부호가 음수인가?
 - 왜 크기가 정확히 $e$인가?
 - 이 전하가 표준 QED의 전하와 동일한 observable인가?
@@ -433,7 +433,7 @@ Planck-S²의 이름과 연구 목표 때문에 독자는 쉽게 이렇게 생�
 - Lorentz covariance가 성립하는가?
 - Dirac dynamics와 어떤 관계인가?
 - QED와 일치하는가?
-- Fermi statistics와 Pauli exclusion이 나오는가?
+- Fermi statistics[^v1c08-fermi-statistics]와 Pauli exclusion[^v1c08-pauli-exclusion]이 나오는가?
 - 질량이 전자 질량과 연결되는가?
 - 크기나 form factor가 실험 제한과 맞는가?
 - magnetic moment와 $g$-factor를 설명하는가?
@@ -782,7 +782,7 @@ $d=2$는 상태 수에 관한 정보이고 $Q$는 map의 degree다. 둘을 연�
 
 ### 3번 정답
 
-적어도 $Q$와 전자기적 $U(1)$ charge 사이의 물리적 bridge가 필요하다. coupling, 부호, normalization, observable identification 등을 별도로 유도해야 한다.
+적어도 $Q$와 전자기적 $U(1)$ charge 사이의 물리적 bridge가 필요하다. coupling, 부호, normalization[^v1c08-normalization], observable identification 등을 별도로 유도해야 한다.
 
 ### 4번 정답: B
 
@@ -849,3 +849,27 @@ canonical proof ledger는 $Q=1=1$ bit라는 등치를 **FALSIFIED AS WRITTEN**�
 - **현재 상태:** DRAFT COMPLETE · AUDIT PENDING
 - **다음 작업:** Independent audit of Chapter 8
 - **금지 작업:** Chapter 9 본문 시작
+
+[^v1c08-qed]: quantum electrodynamics(양자전기역학). 전자와 빛(전자기장)의 상호작용을 기술하는 표준 양자장이론이다. 이 장에서는 Planck-S²가 QED와 아직 연결되지 않았다는 경계를 말할 때만 사용한다.
+
+[^v1c08-log-state-count]: 이 식은 일반적인 확률분포의 Shannon entropy 전체 정의가 아니다. 서로 구별 가능한 $d$개 상태를 같은 후보로 놓는 단순한 유한 상태 그림에서의 로그 상태수, 즉 최대 상태 식별 정보의 예로만 사용한다.
+
+[^v1c08-topological-charge]: 장이나 map의 전역적 위상 구조에서 정의되는 보존량 또는 분류값을 가리키는 말. 이름에 charge가 들어가도 전기전하와 자동으로 같은 양은 아니다.
+
+[^v1c08-soliton]: 비선형 장이론에서 모양을 유지하는 국소화된 해를 가리키는 말. 어떤 위상 sector가 soliton 하나와 대응하는지는 모델의 동역학을 따로 확인해야 한다.
+
+[^v1c08-hilbert-space]: 양자상태를 벡터처럼 다루기 위해 사용하는 상태공간. 어떤 상태들을 서로 독립으로 세는지는 이 공간과 물리적 제약을 정한 뒤 판단해야 한다.
+
+[^v1c08-em-u1]: $U(1)$은 위상 하나로 표현되는 회전 대칭의 수학적 군이다. 전자기학에서는 이 대칭이 전하와 전자기 gauge 구조를 기술하는 데 사용되지만, Planck-S²의 degree $Q$와 자동으로 동일하지 않다.
+
+[^v1c08-coupling]: 두 자유도나 장이 서로 얼마나, 어떤 방식으로 상호작용하는지를 이론 안에 연결하는 것을 뜻한다.
+
+[^v1c08-gauge-field]: 위치마다 정한 내부 기준의 변화에 맞추어 물리 법칙을 일관되게 만드는 장. 전자기학에서는 전자기 퍼텐셜이 $U(1)$ gauge field의 역할을 한다.
+
+[^v1c08-coupling-constant]: 상호작용의 세기를 정하는 계수. 어떤 이론에서 그 값과 부호가 무엇인지 별도로 정하거나 유도해야 한다.
+
+[^v1c08-fermi-statistics]: 서로 같은 fermion 여러 개를 바꾸어 놓았을 때 양자상태가 특정 부호 규칙을 따르는 통계적 성질. 단일 입자의 회전 성질만으로 자동 확정되는 내용은 아니다.
+
+[^v1c08-pauli-exclusion]: 같은 종류의 fermion 두 개가 완전히 같은 단일입자 양자상태를 동시에 차지할 수 없다는 원리. 여기서는 Planck-S²가 아직 이 다입자 성질을 유도하지 않았다는 경계로 등장한다.
+
+[^v1c08-normalization]: 어떤 양의 전체 크기나 기준 단위를 맞추기 위해 계수를 정하는 절차. 여기서는 $Q$에서 실제 전하의 정확한 크기 $e$를 얻으려면 그 비례 기준까지 별도로 정해져야 한다는 뜻이다.
