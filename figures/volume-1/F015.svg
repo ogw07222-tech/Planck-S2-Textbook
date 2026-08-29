@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:36px;font-weight:700}.h{font-size:28px;font-weight:700}.b{font-size:21px}.s{font-size:18px}.space{fill:#f7fafc;stroke:#4a5568;stroke-width:3}.pt{fill:#eef6ff;stroke:#2b6cb0;stroke-width:3}.warn{fill:#fff8e6;stroke:#b7791f;stroke-width:3}.curve{stroke:#2f855a;stroke-width:6;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2f855a"/></marker></defs>
+  <text x="640" y="52" text-anchor="middle" class="title">F015  configuration space 안의 path</text>
+  <rect x="90" y="110" width="1100" height="420" rx="30" class="space"/>
+  <text x="640" y="155" text-anchor="middle" class="h">configuration space 𝒞₁</text>
+
+  <circle cx="230" cy="370" r="34" class="pt"/><circle cx="1035" cy="275" r="34" class="pt"/>
+  <text x="230" y="425" text-anchor="middle" class="b">γ(0)=n₀</text>
+  <text x="1035" y="330" text-anchor="middle" class="b">γ(1)=n₁</text>
+  <path d="M255 355 C420 180 610 470 800 300 C880 230 950 240 1000 272" class="curve"/>
+  <circle cx="455" cy="286" r="12" fill="#2f855a"/><circle cx="650" cy="373" r="12" fill="#2f855a"/><circle cx="835" cy="279" r="12" fill="#2f855a"/>
+  <text x="455" y="260" text-anchor="middle" class="s">nₜ</text><text x="650" y="410" text-anchor="middle" class="s">nₜ</text><text x="835" y="250" text-anchor="middle" class="s">nₜ</text>
+  <text x="640" y="490" text-anchor="middle" class="b">γ:[0,1]→𝒞₁,  t↦γ(t)=nₜ</text>
+
+  <rect x="155" y="575" width="970" height="105" rx="20" class="warn"/>
+  <text x="640" y="615" text-anchor="middle" class="b">t는 path를 따라가는 매개변수다. 반드시 실제 시간이 아니다.</text>
+  <text x="640" y="650" text-anchor="middle" class="s">이 경로가 존재한다고 해서 실제 dynamics가 그 경로를 따라간다는 뜻도 아니다.</text>
+  <text x="640" y="720" text-anchor="middle" class="s">개념도 — configuration space의 실제 metric·차원·에너지 지형을 그린 것이 아님</text>
+</svg>
