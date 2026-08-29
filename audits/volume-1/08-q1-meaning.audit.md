@@ -2,104 +2,78 @@
 
 - **Audit date:** 2026-08-29
 - **Canonical file:** `volume-1/08-q1-meaning.md`
-- **Verdict:** **REVISE — SCIENTIFIC CONTENT PASS · FOOTNOTE ENRICHMENT REQUIRED**
+- **Verdict:** **PASS — FOOTNOTE BLOCKER CLOSED · CHAPTER 9 AUDIT MAY PROCEED**
 
-## 1. Scientific / mathematical audit
+## 1. Re-audit scope
+
+The previous audit had already passed the scientific and mathematical content and left one editorial blocker: specialist-term footnotes required by `MASTER.md` §8.1.
+
+The current main branch was re-read after the footnote-enrichment edit.
+
+## 2. Scientific / mathematical audit
 
 **PASS.**
 
-The chapter preserves the canonical boundaries correctly:
+The chapter still preserves the frozen baseline correctly:
 
 - $Q=\deg(n)$ is the topological degree of the full $S^2\to S^2$ map.
-- $Q=1=1$ bit is explicitly **FALSIFIED AS WRITTEN**.
-- $Q=1=$ electric charge $-e$ remains **OPEN**.
+- $Q=1=1$ bit is **FALSIFIED AS WRITTEN**.
+- $Q=1=$ electric charge $-e$ is **OPEN**.
 - $Q=1=$ electron identity is not asserted.
 - actual physical configuration space = ideal mapping space remains **OPEN**.
-- choosing the $Q=1$ sector is kept as **CONDITIONAL · PROJECT MODEL CHOICE**.
-- the full Planck-S² proposal remains **WORKING HYPOTHESIS**.
+- choosing the $Q=1$ sector remains **CONDITIONAL · PROJECT MODEL CHOICE**.
+- the complete Planck-S² proposal remains **WORKING HYPOTHESIS**.
 
-These statements are consistent with `sources/proof-status.md`.
+These boundaries agree with `sources/proof-status.md`.
 
-## 2. Information-counting audit
+## 3. Information-counting re-audit
 
-**PASS WITH PRECISION NOTE.**
+**PASS.**
 
-The chapter uses
+The text uses
 
 $$
 I=\log_2 d
 $$
 
-only as a simple finite-state state-count example and correctly states that $Q=1$ does not imply $d=2$. This is sufficient for the chapter's purpose.
+only as a simple finite-state state-count example and explicitly states that $Q=1$ does not imply $d=2$.
 
-For later precision, `\log_2 d` should be understood as log state count / maximum state-identification information in the simple equally weighted finite-state picture, not as the most general Shannon entropy formula for an arbitrary probability distribution. This is **non-blocking** and is a good candidate for a precision footnote.
+The new footnote `[^v1c08-log-state-count]` also closes the earlier precision note by stating that this is not the general Shannon-entropy formula for an arbitrary probability distribution, but a simple logarithmic state-count / maximum state-identification example.
 
-## 3. Electromagnetic-bridge audit
-
-**PASS.**
-
-The chapter correctly refuses to identify topological degree with electromagnetic charge. It explicitly lists the need for an electromagnetic $U(1)$ structure, coupling, sign/normalization, and observable identification before $Q$ could be connected to $q_e=-e$.
-
-No unsupported electromagnetic-charge derivation is claimed.
-
-## 4. Electron-identity audit
+## 4. Specialist-term footnote audit
 
 **PASS.**
 
-The chapter correctly separates the $Q=1$ model sector from a physical electron. It lists still-open bridges including spin-1/2 completion, Lorentz/Dirac/QED matching, Fermi statistics, mass, size/form factor, magnetic moment, and $g$-factor.
+The previous blocker is closed. The chapter now provides compact notes for the required unfamiliar vocabulary, including:
 
-This is consistent with the frozen project baseline.
+- QED
+- Hilbert space
+- electromagnetic $U(1)$
+- coupling / coupling constant
+- gauge field
+- Fermi statistics
+- Pauli exclusion
+- topological charge
+- soliton
+- normalization
+
+The notes are explanatory only and do not hide the chapter's `OPEN`, `CONDITIONAL`, or `FALSIFIED AS WRITTEN` boundaries.
 
 ## 5. Figure audit
 
-### Reused F010
+### F010 reuse
 
 **PASS.**
 
-Its use remains limited to a representative degree-$+1$ map. The chapter explicitly states that the diagram does not imply 1 bit, charge $-e$, electron identity, spin-1/2, or electron observables.
+The reused degree-$+1$ diagram remains explicitly limited to degree mathematics.
 
 ### F1X05
 
 **PASS.**
 
-The asset cleanly separates:
+The asset separates what $Q=1$ does say from what it does not automatically imply, while also stating that the unproved physical bridges are not claims of eternal impossibility.
 
-- what $Q=1$ mathematically says, and
-- what cannot currently be inferred automatically.
-
-The figure also states that the forbidden automatic inferences are not claims of eternal impossibility; rather, the required physical bridge is currently unproved.
-
-## 6. Educational audit
-
-**PASS on structure and explanation.**
-
-The “same numeral, different quantity” analogy is effective and its limitation is stated. The chapter also keeps `degree`, `bit`, `electric charge`, and `particle number` as different kinds of objects rather than relying on numerical coincidence.
-
-## 7. Footnote-policy audit
-
-**REVISE REQUIRED.**
-
-The current `MASTER.md` requires unfamiliar specialist vocabulary to receive short explanatory footnotes at the first meaningful appearance unless it has already been adequately introduced. Chapter 8 was drafted just before the new footnote policy and currently contains no `v1c08-*` footnotes.
-
-At minimum, the next editorial pass should consider compact notes for terms such as:
-
-- `Hilbert space`
-- electromagnetic `U(1)` / `gauge field`
-- `coupling` / `coupling constant`
-- `QED`
-- `Fermi statistics`
-- `Pauli exclusion`
-- `topological charge`
-- `soliton`
-- `normalization`
-
-Terms already adequately introduced in earlier chapters do not need duplicate notes merely because they reappear.
-
-A useful precision footnote may also be added to the simple $I=\log_2 d$ state-count example.
-
-This is an **editorial/accessibility blocker only**. No new scientific or mathematical blocker was found.
-
-## 8. Final ruling
+## 6. Final ruling
 
 | Area | Verdict |
 |---|---|
@@ -107,12 +81,13 @@ This is an **editorial/accessibility blocker only**. No new scientific or mathem
 | $Q=1\neq1$ bit boundary | **PASS** |
 | $Q=1\neq$ charge $-e$ boundary | **PASS** |
 | Electron-identity boundary | **PASS** |
-| F010 / F1X05 figures | **PASS** |
+| Information-count precision | **PASS** |
+| Specialist-term footnotes | **PASS** |
+| F010 / F1X05 | **PASS** |
 | Proof-status consistency | **PASS** |
-| New specialist-term footnote policy | **REVISE REQUIRED** |
 
 ### Overall
 
-**REVISE — CONTENT PASS, FOOTNOTE COMPLETION ONLY.**
+**PASS.**
 
-Chapter 9 remains blocked until Chapter 8 receives the footnote-enrichment edit and this audit is re-run. No scientific rewrite is requested.
+The earlier footnote-only blocker is closed. No scientific rewrite is required.
