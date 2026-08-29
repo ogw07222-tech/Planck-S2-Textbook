@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:27px;font-weight:700}.small{font-size:22px}.tiny{font-size:19px}.panel{fill:#fafcff;stroke:#7aa2d6;stroke-width:3}.sphere{fill:#f7fbff;stroke:#2b6cb0;stroke-width:4}.grid{stroke:#aac5e3;stroke-width:2;fill:none}.arrow{stroke:#2f855a;stroke-width:5;fill:none;marker-end:url(#garr)}.varrow{stroke:#c05621;stroke-width:5;fill:none;marker-end:url(#oarr)}
+  </style>
+  <defs>
+    <marker id="garr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2f855a"/></marker>
+    <marker id="oarr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c05621"/></marker>
+  </defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F006 장(field): 같은 domain의 모든 점에 무엇을 붙이는가?</text>
+
+  <rect x="40" y="100" width="350" height="500" rx="22" class="panel"/>
+  <rect x="425" y="100" width="350" height="500" rx="22" class="panel"/>
+  <rect x="810" y="100" width="350" height="500" rx="22" class="panel"/>
+
+  <text x="215" y="145" text-anchor="middle" class="label">① 스칼라장 φ</text>
+  <text x="215" y="178" text-anchor="middle" class="small">점 → 숫자</text>
+  <circle cx="215" cy="350" r="145" class="sphere"/>
+  <ellipse cx="215" cy="350" rx="145" ry="55" class="grid"/>
+  <path d="M215 205 C160 255,160 445,215 495 M215 205 C270 255,270 445,215 495" class="grid"/>
+  <circle cx="165" cy="280" r="9" fill="#2b6cb0"/><text x="120" y="270" class="small">φ=12</text>
+  <circle cx="260" cy="330" r="9" fill="#2b6cb0"/><text x="273" y="322" class="small">φ=20</text>
+  <circle cx="190" cy="420" r="9" fill="#2b6cb0"/><text x="115" y="448" class="small">φ=7</text>
+  <text x="215" y="545" text-anchor="middle" class="small">각 점에 숫자 하나</text>
+  <text x="215" y="575" text-anchor="middle" class="tiny">예: 온도, 밀도 같은 값</text>
+
+  <text x="600" y="145" text-anchor="middle" class="label">② 벡터/방향장 v</text>
+  <text x="600" y="178" text-anchor="middle" class="small">점 → 방향(+길이)</text>
+  <circle cx="600" cy="350" r="145" class="sphere"/>
+  <ellipse cx="600" cy="350" rx="145" ry="55" class="grid"/>
+  <path d="M600 205 C545 255,545 445,600 495 M600 205 C655 255,655 445,600 495" class="grid"/>
+  <path d="M540 285 l55 -38" class="varrow"/><path d="M635 305 l72 5" class="varrow"/><path d="M550 385 l-25 62" class="varrow"/><path d="M645 405 l52 48" class="varrow"/>
+  <text x="600" y="545" text-anchor="middle" class="small">각 점에 화살표 하나</text>
+  <text x="600" y="575" text-anchor="middle" class="tiny">길이가 크기 정보를 담을 수도 있음</text>
+
+  <text x="985" y="145" text-anchor="middle" class="label">③ 단위벡터장 n</text>
+  <text x="985" y="178" text-anchor="middle" class="small">점 → 단위방향</text>
+  <circle cx="985" cy="350" r="145" class="sphere"/>
+  <ellipse cx="985" cy="350" rx="145" ry="55" class="grid"/>
+  <path d="M985 205 C930 255,930 445,985 495 M985 205 C1040 255,1040 445,985 495" class="grid"/>
+  <path d="M925 285 l48 -32" class="arrow"/><path d="M1020 305 l57 4" class="arrow"/><path d="M935 390 l-20 54" class="arrow"/><path d="M1030 405 l42 39" class="arrow"/>
+  <text x="985" y="545" text-anchor="middle" class="small">모든 화살표 길이를 1로 제한</text>
+  <text x="985" y="575" text-anchor="middle" class="tiny">|n(x)|=1 → 핵심 정보는 방향</text>
+
+  <text x="600" y="645" text-anchor="middle" class="small">개념도 — 구는 domain의 예시일 뿐이며, 화살표가 실제 물질 표면의 바늘이라는 뜻이 아니다.</text>
+</svg>
