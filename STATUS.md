@@ -9,7 +9,7 @@
 | 3 | DRAFT COMPLETE | PASS |
 | 4 | DRAFT COMPLETE | PASS |
 | 5 | DRAFT COMPLETE | PASS |
-| 6 | NOT STARTED | — |
+| 6 | DRAFT COMPLETE | AUDIT PENDING |
 | 7 | NOT STARTED | — |
 | 8 | NOT STARTED | — |
 | 9 | NOT STARTED | — |
@@ -22,7 +22,7 @@
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Draft Chapter 6 — `S²→S²`의 domain과 target을 분리해 읽기.
+**Current next action:** Independent audit of Chapter 6.
 
 **DO NOT START:** Chapter 7 before Chapter 6 independent audit passes.
 
