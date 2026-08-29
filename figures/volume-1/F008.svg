@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:28px;font-weight:700}.small{font-size:22px}.tiny{font-size:19px}.dom{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.tar{fill:#eefaf1;stroke:#2f855a;stroke-width:4}.gridA{stroke:#a7c3e3;stroke-width:2;fill:none}.gridB{stroke:#a7d5b0;stroke-width:2;fill:none}.map{stroke:#555;stroke-width:4;fill:none;marker-end:url(#arr)}.vec{stroke:#2f855a;stroke-width:6;fill:none;marker-end:url(#garr)}.ptA{fill:#2b6cb0}.ptB{fill:#2f855a}.note{fill:#fff8e8;stroke:#d69e2e;stroke-width:2}
+  </style>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker>
+    <marker id="garr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2f855a"/></marker>
+  </defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F008  한 domain 점 x에서 n(x)는 무엇인가?</text>
+
+  <text x="245" y="118" text-anchor="middle" class="label">① domain에서 점 하나 선택</text>
+  <circle cx="245" cy="350" r="155" class="dom"/>
+  <ellipse cx="245" cy="350" rx="155" ry="55" class="gridA"/>
+  <path d="M245 195 C190 250,190 450,245 505 M245 195 C300 250,300 450,245 505" class="gridA"/>
+  <circle cx="300" cy="305" r="10" class="ptA"/>
+  <text x="320" y="297" class="small">x</text>
+
+  <path d="M420 320 C530 260,590 260,685 315" class="map"/>
+  <text x="552" y="235" text-anchor="middle" class="label">n</text>
+  <text x="552" y="270" text-anchor="middle" class="small">x ↦ n(x)</text>
+
+  <text x="895" y="118" text-anchor="middle" class="label">② target에서 값 n(x) 선택</text>
+  <circle cx="895" cy="350" r="155" class="tar"/>
+  <ellipse cx="895" cy="350" rx="155" ry="55" class="gridB"/>
+  <path d="M895 195 C840 250,840 450,895 505 M895 195 C950 250,950 450,895 505" class="gridB"/>
+  <circle cx="955" cy="285" r="10" class="ptB"/>
+  <text x="975" y="275" class="small">n(x)</text>
+  <path d="M895 350 L951 291" class="vec"/>
+  <text x="822" y="374" class="small">중심</text>
+  <text x="940" y="410" class="small">|n(x)| = 1</text>
+
+  <rect x="120" y="565" width="960" height="100" rx="14" class="note"/>
+  <text x="600" y="600" text-anchor="middle" class="small">target의 점 n(x)는 단위방향 하나를 나타낼 수 있다.</text>
+  <text x="600" y="632" text-anchor="middle" class="small">그 방향을 domain의 점 x에 화살표로 그리는 것은 시각화 방법일 뿐, 실제 바늘이 있다는 뜻이 아니다.</text>
+  <text x="600" y="658" text-anchor="middle" class="tiny">또한 n(x)가 domain 구면의 접선벡터라는 뜻도 아니다. 이 책의 후보 n은 internal direction value로 구분한다.</text>
+</svg>
