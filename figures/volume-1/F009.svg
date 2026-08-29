@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:28px;font-weight:700}.small{font-size:22px}.tiny{font-size:19px}.dom{fill:#eef6ff;stroke:#2b6cb0;stroke-width:4}.tar{fill:#eefaf1;stroke:#2f855a;stroke-width:4}.gridA{stroke:#a7c3e3;stroke-width:2;fill:none}.gridB{stroke:#a7d5b0;stroke-width:2;fill:none}.map{stroke:#555;stroke-width:4;fill:none;marker-end:url(#arr)}.ptA{fill:#2b6cb0}.ptB{fill:#2f855a}.note{fill:#fff8e8;stroke:#d69e2e;stroke-width:2}
+  </style>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+  <text x="600" y="55" text-anchor="middle" class="title">F009  degree Q = 0 — 가장 단순한 예: 상수 map</text>
+  <circle cx="300" cy="330" r="180" class="dom"/>
+  <ellipse cx="300" cy="330" rx="180" ry="65" class="gridA"/>
+  <path d="M300 150 C230 215,230 445,300 510 M300 150 C370 215,370 445,300 510" class="gridA"/>
+  <circle cx="900" cy="330" r="180" class="tar"/>
+  <ellipse cx="900" cy="330" rx="180" ry="65" class="gridB"/>
+  <path d="M900 150 C830 215,830 445,900 510 M900 150 C970 215,970 445,900 510" class="gridB"/>
+  <text x="300" y="125" text-anchor="middle" class="label">domain S²</text>
+  <text x="900" y="125" text-anchor="middle" class="label">target S²</text>
+  <circle cx="250" cy="250" r="10" class="ptA"/><circle cx="345" cy="280" r="10" class="ptA"/><circle cx="280" cy="405" r="10" class="ptA"/><circle cx="375" cy="390" r="10" class="ptA"/>
+  <circle cx="900" cy="225" r="13" class="ptB"/>
+  <path d="M260 250 C500 210,670 210,885 225" class="map"/>
+  <path d="M355 280 C550 260,700 245,885 225" class="map"/>
+  <path d="M290 405 C530 390,690 285,885 225" class="map"/>
+  <path d="M385 390 C570 360,720 280,885 225" class="map"/>
+  <text x="600" y="555" text-anchor="middle" class="label">모든 점을 한 target 점으로 보내는 상수 map의 degree는 0</text>
+  <rect x="145" y="590" width="910" height="82" rx="16" class="note"/>
+  <text x="600" y="623" text-anchor="middle" class="small">주의: Q=0인 map이 모두 상수 map이라는 뜻은 아니다.</text>
+  <text x="600" y="654" text-anchor="middle" class="tiny">이 그림은 degree 0의 가장 쉬운 대표 예만 보여 주는 개념도다.</text>
+</svg>
