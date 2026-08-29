@@ -1,13 +1,13 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
-> OVERNIGHT BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 제8~12장은 순차 독립 감사가 필요하다.
+> OVERNIGHT BATCH DRAFT MODE에서 작성된 뒤 독립 순차 감사 PASS를 받았다.
 
 # 9장 · configuration: 화살표 전체 배치 하나
 
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **선행 장 사용 방식:** 제8장 초안과 frozen baseline을 참고하되, 미감사 내용을 새 확정 사실로 승격하지 않는다.
 - **다음 배치 대상:** 제10장 DRAFT
 - **과학적 경계:** 실제 physical configuration의 ontology는 **OPEN**
@@ -463,7 +463,7 @@ canonical proof ledger에서 physical completion, quotient, finite-energy/EFT-va
 - **Required figure:** `figures/volume-1/F013.svg`
 - **작성 모드:** OVERNIGHT BATCH DRAFT MODE
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **핵심 경계:** $x\neq n(x)$; $n(x)$는 한 점 값, $n$은 full field/configuration; physical configuration ontology는 OPEN
 - **작성자 PASS:** 부여하지 않음
 

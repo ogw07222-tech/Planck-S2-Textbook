@@ -1,16 +1,16 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
-> OVERNIGHT BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 이 장은 loop의 표준 언어만 준비하며 $\mathbb Z_2$, FR, 특정 2π rotation generator 결론을 앞당기지 않는다.
+> OVERNIGHT BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 이 장은 loop의 표준 언어만 준비하며 $\mathbb Z_2$, FR, 특정 2π rotation generator 결론을 앞당기지 않는다.
 
 # 12장 · 출발점으로 돌아오기: loop
 
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **선행 장 사용 방식:** 제11장 초안의 path 언어를 사용하되 frozen baseline과 proof ledger의 범위를 우선한다.
-- **다음 허용 작업:** Independent sequential audit of Chapters 8–12
-- **DO NOT START:** Chapter 13 before overnight batch audit is completed
+- **다음 허용 작업:** Chapter 13 DRAFT
+- **DO NOT START:** Chapter 14 before Chapter 13 independent audit passes
 
 ---
 
@@ -494,11 +494,11 @@ full configuration이 출발 configuration으로 돌아온다.
 - **Canonical file:** `volume-1/12-loop.md`
 - **Required figure:** `figures/volume-1/F016.svg`
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **핵심 경계:** endpoint equality $\neq$ path triviality; loop $\neq$ automatically physical time evolution
 - **금지 승격:** specific 2π loop generator / $\mathbb Z_2$ / FR 결론 앞당기기 금지
 - **작성자 PASS:** 부여하지 않음
-- **DO NOT START:** Chapter 13 before independent sequential audit of Chapters 8–12
+- **후속 작업:** Chapter 13 DRAFT APPROVED; Chapter 14 remains blocked pending Chapter 13 audit
 
 [^v1c12-loop]: 시작점과 끝점이 같은 path. configuration space에서는 full configuration이 변하다가 출발 configuration으로 돌아오는 닫힌 경로다.
 

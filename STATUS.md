@@ -11,20 +11,20 @@
 | 5 | DRAFT COMPLETE | PASS |
 | 6 | DRAFT COMPLETE | PASS |
 | 7 | DRAFT COMPLETE | PASS |
-| 8 | DRAFT COMPLETE | AUDIT PENDING |
-| 9 | DRAFT COMPLETE | AUDIT PENDING |
-| 10 | DRAFT COMPLETE | AUDIT PENDING |
-| 11 | DRAFT COMPLETE | AUDIT PENDING |
-| 12 | DRAFT COMPLETE | AUDIT PENDING |
+| 8 | DRAFT COMPLETE | PASS |
+| 9 | DRAFT COMPLETE | PASS |
+| 10 | DRAFT COMPLETE | PASS |
+| 11 | DRAFT COMPLETE | PASS |
+| 12 | DRAFT COMPLETE | PASS |
 | 13 | NOT STARTED | — |
 | 14 | NOT STARTED | — |
 | 15 | NOT STARTED | — |
 | 16 | NOT STARTED | — |
 | Closing | NOT STARTED | — |
 
-**Current next action:** Independent sequential audit of Chapters 8–12.
+**Current next action:** Draft Chapter 13 — 고무줄처럼 줄일 수 있는가: homotopy.
 
-**DO NOT START:** Chapter 13 before the overnight batch audit is completed.
+**DO NOT START:** Chapter 14 before Chapter 13 independent audit passes.
 
 ## Canonical status rule
 

@@ -1,4 +1,4 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
 > OVERNIGHT BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 수학적 path와 실제 dynamics를 구분한다.
 
@@ -7,7 +7,7 @@
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **선행 장 사용 방식:** 제10장 초안의 configuration-space 언어를 사용하되 physical-space OPEN 경계를 그대로 유지한다.
 - **다음 배치 대상:** 제12장 DRAFT
 - **핵심 경계:** path parameter $t$는 반드시 physical time이 아니며, path의 존재는 dynamics의 존재를 뜻하지 않는다.
@@ -479,7 +479,7 @@ full field configuration 전체가 변한다.
 - **Canonical file:** `volume-1/11-path.md`
 - **Required figure:** `figures/volume-1/F015.svg`
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **핵심 경계:** path parameter $\neq$ automatically physical time; path existence $\neq$ dynamics
 - **작성자 PASS:** 부여하지 않음
 

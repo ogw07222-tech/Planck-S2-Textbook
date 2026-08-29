@@ -1,13 +1,13 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
-> 이 장은 작성 Chat의 초안이다. 아직 독립 감사 PASS가 아니다. 제9장은 이 장의 독립 감사가 끝나기 전까지 시작하지 않는다.
+> 이 장은 독립 감사 PASS를 받았다. 과학적 경계와 proof-status는 frozen baseline을 따른다.
 
 # 8장 · Q=1이 뜻하는 것과 뜻하지 않는 것
 
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **선행 장:** 제7장 「구를 몇 번 감았는가: degree Q」 — PASS
 - **다음 허용 작업:** 제8장 독립 감사
 - **아직 시작하지 않는 것:** 제9장 본문
@@ -846,9 +846,9 @@ canonical proof ledger는 $Q=1=1$ bit라는 등치를 **FALSIFIED AS WRITTEN**�
 - **실제 electron bridge:** OPEN
 - **전체 이론:** WORKING HYPOTHESIS
 - **작성자 자체 최종 PASS:** 부여하지 않음
-- **현재 상태:** DRAFT COMPLETE · AUDIT PENDING
-- **다음 작업:** Independent audit of Chapter 8
-- **금지 작업:** Chapter 9 본문 시작
+- **현재 상태:** DRAFT COMPLETE · PASS
+- **독립 감사:** PASS — 2026-08-29
+- **후속 상태:** Chapters 9–12 batch audit completed separately
 
 [^v1c08-qed]: quantum electrodynamics(양자전기역학). 전자와 빛(전자기장)의 상호작용을 기술하는 표준 양자장이론이다. 이 장에서는 Planck-S²가 QED와 아직 연결되지 않았다는 경계를 말할 때만 사용한다.
 
