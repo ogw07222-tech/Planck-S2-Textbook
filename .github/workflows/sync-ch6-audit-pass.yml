@@ -1,0 +1,47 @@
+name: Sync Chapter 6 Audit Pass
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-ch6-audit-pass.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Synchronize chapter 6 audit state
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path('volume-1/06-s2-to-s2.md')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('STATUS: DRAFT COMPLETE · AUDIT PENDING', 'STATUS: DRAFT COMPLETE · AUDIT PASS')
+          s = s.replace('**감사 상태:** AUDIT PENDING', '**감사 상태:** PASS')
+          s = s.replace('- 감사 단계: **AUDIT PENDING**', '- 감사 단계: **PASS — 2026-08-29**')
+          s = s.replace('- 다음 작업: **Independent audit of Chapter 6**', '- 다음 작업: **Chapter 7 DRAFT 제작 허용**')
+          s = s.replace('- 금지 작업: **Chapter 7 본문 시작 금지 — Chapter 6 audit PASS 필요**', '- 감사 결과: **PASS — Chapter 7 DRAFT APPROVED**')
+          p.write_text(s, encoding='utf-8')
+
+          p = Path('figures/registry.md')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('| **F007** | 제1권 | 6장 | domain S²와 target S² 나란히 놓기 | S²→S²를 두 개의 구로 분리 | 두 구가 실제 공간에 함께 존재한다는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |', '| **F007** | 제1권 | 6장 | domain S²와 target S² 나란히 놓기 | S²→S²를 두 개의 구로 분리 | 두 구가 실제 공간에 함께 존재한다는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |')
+          s = s.replace('| **F008** | 제1권 | 6장 | 한 domain 점의 화살표가 target 점을 고르는 그림 | n(x)의 의미 | target은 방향공간일 수 있으며 domain tangent vector와 자동 동일시하지 않기 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |', '| **F008** | 제1권 | 6장 | 한 domain 점의 화살표가 target 점을 고르는 그림 | n(x)의 의미 | target은 방향공간일 수 있으며 domain tangent vector와 자동 동일시하지 않기 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |')
+          p.write_text(s, encoding='utf-8')
+
+          p = Path('STATUS.md')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('| 6 | DRAFT COMPLETE | AUDIT PENDING |', '| 6 | DRAFT COMPLETE | PASS |')
+          s = s.replace('**Current next action:** Independent audit of Chapter 6.', '**Current next action:** Draft Chapter 7 — degree Q의 의미와 S²→S² map의 전역 분류를 설명한다.')
+          s = s.replace('**DO NOT START:** Chapter 7 before Chapter 6 independent audit passes.', '**DO NOT START:** Chapter 8 before Chapter 7 independent audit passes.')
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit synchronized audit state
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add volume-1/06-s2-to-s2.md figures/registry.md STATUS.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'audit: synchronize chapter 6 PASS state'
+          git push
