@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="white"/>
+  <style>
+    text{font-family:Arial,sans-serif;fill:#111}.title{font-size:38px;font-weight:700}.label{font-size:30px;font-weight:600}.small{font-size:25px}.node{fill:#2b6cb0}.ynode{fill:#2f855a}.line{stroke:#444;stroke-width:4;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#444"/></marker></defs>
+  <text x="600" y="60" text-anchor="middle" class="title">F005 함수: domain → 규칙 → target</text>
+  <ellipse cx="260" cy="350" rx="180" ry="235" fill="#edf5ff" stroke="#2b6cb0" stroke-width="4"/>
+  <ellipse cx="940" cy="350" rx="180" ry="235" fill="#eefaf1" stroke="#2f855a" stroke-width="4"/>
+  <text x="260" y="105" text-anchor="middle" class="label">domain X</text>
+  <text x="940" y="105" text-anchor="middle" class="label">target Y</text>
+  <text x="600" y="150" text-anchor="middle" class="label">f : X → Y</text>
+  <circle cx="220" cy="240" r="13" class="node"/><text x="175" y="250" class="small">x₁</text>
+  <circle cx="220" cy="350" r="13" class="node"/><text x="175" y="360" class="small">x₂</text>
+  <circle cx="220" cy="460" r="13" class="node"/><text x="175" y="470" class="small">x₃</text>
+  <circle cx="975" cy="240" r="13" class="ynode"/><text x="1000" y="250" class="small">y₁</text>
+  <circle cx="975" cy="350" r="13" class="ynode"/><text x="1000" y="360" class="small">y₂</text>
+  <circle cx="975" cy="460" r="13" class="ynode"/><text x="1000" y="470" class="small">y₃</text>
+  <path d="M235 240 C480 240,710 240,960 240" class="line"/>
+  <path d="M235 350 C490 350,720 350,960 350" class="line"/>
+  <path d="M235 460 C500 450,720 370,960 350" class="line"/>
+  <text x="600" y="590" text-anchor="middle" class="label">x ↦ f(x)</text>
+  <text x="600" y="635" text-anchor="middle" class="small">각 입력에는 정확히 하나의 출력이 대응한다.</text>
+  <text x="600" y="670" text-anchor="middle" class="small">서로 다른 입력이 같은 출력으로 가는 것은 허용된다.</text>
+</svg>
