@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" fill="white"/>
+  <style>
+    text{font-family:Arial,'Noto Sans KR',sans-serif;fill:#111}.title{font-size:36px;font-weight:700}.h{font-size:27px;font-weight:700}.b{font-size:21px}.s{font-size:18px}.room{fill:#f7fafc;stroke:#4a5568;stroke-width:3}.cfg{fill:#eef6ff;stroke:#2b6cb0;stroke-width:3}.warn{fill:#fff8e6;stroke:#b7791f;stroke-width:3}.arrow{stroke:#4a5568;stroke-width:3;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#4a5568"/></marker></defs>
+  <text x="640" y="52" text-anchor="middle" class="title">F014  configuration space = 가능한 전체 배치들의 “모양 박물관”</text>
+  <rect x="80" y="115" width="1120" height="420" rx="30" class="room"/>
+  <text x="640" y="160" text-anchor="middle" class="h">configuration space</text>
+  <text x="640" y="194" text-anchor="middle" class="s">각 전시품 하나 = full field configuration 하나</text>
+
+  <g class="cfg">
+    <rect x="150" y="245" width="220" height="180" rx="18"/>
+    <rect x="430" y="245" width="220" height="180" rx="18"/>
+    <rect x="710" y="245" width="220" height="180" rx="18"/>
+    <rect x="990" y="245" width="150" height="180" rx="18"/>
+  </g>
+  <text x="260" y="285" text-anchor="middle" class="h">n₀</text><text x="260" y="325" text-anchor="middle" class="b">배치 전체 A</text><text x="260" y="370" text-anchor="middle" class="s">space의 점 하나</text>
+  <text x="540" y="285" text-anchor="middle" class="h">n₁</text><text x="540" y="325" text-anchor="middle" class="b">배치 전체 B</text><text x="540" y="370" text-anchor="middle" class="s">space의 점 하나</text>
+  <text x="820" y="285" text-anchor="middle" class="h">n₂</text><text x="820" y="325" text-anchor="middle" class="b">배치 전체 C</text><text x="820" y="370" text-anchor="middle" class="s">space의 점 하나</text>
+  <text x="1065" y="285" text-anchor="middle" class="h">…</text><text x="1065" y="335" text-anchor="middle" class="s">더 많은</text><text x="1065" y="365" text-anchor="middle" class="s">configuration</text>
+
+  <path d="M260 445 L260 490" class="arrow"/><path d="M540 445 L540 490" class="arrow"/><path d="M820 445 L820 490" class="arrow"/>
+  <text x="640" y="515" text-anchor="middle" class="b">“점”은 작은 물질점이 아니라 함수 전체 하나를 뜻할 수 있다.</text>
+
+  <rect x="150" y="580" width="980" height="105" rx="20" class="warn"/>
+  <text x="640" y="620" text-anchor="middle" class="b">주의: 실제 configuration space가 2D 박물관처럼 생겼다는 뜻이 아니다.</text>
+  <text x="640" y="655" text-anchor="middle" class="s">physical quotient · completion · finite-energy · EFT-valid 조건을 적용하면 공간 자체가 달라질 수 있다.</text>
+  <text x="640" y="720" text-anchor="middle" class="s">개념도 — ideal mapping space의 교육용 비유, 실제 electron 상태공간 확정 아님</text>
+</svg>
