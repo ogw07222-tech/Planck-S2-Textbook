@@ -16,15 +16,15 @@
 | 10 | DRAFT COMPLETE | PASS |
 | 11 | DRAFT COMPLETE | PASS |
 | 12 | DRAFT COMPLETE | PASS |
-| 13 | NOT STARTED | — |
-| 14 | NOT STARTED | — |
-| 15 | NOT STARTED | — |
-| 16 | NOT STARTED | — |
-| Closing | NOT STARTED | — |
+| 13 | DRAFT COMPLETE | AUDIT PENDING |
+| 14 | DRAFT COMPLETE | AUDIT PENDING |
+| 15 | DRAFT COMPLETE | AUDIT PENDING |
+| 16 | DRAFT COMPLETE | AUDIT PENDING |
+| Closing | DRAFT COMPLETE | AUDIT PENDING |
 
-**Current next action:** Draft Chapter 13 — 고무줄처럼 줄일 수 있는가: homotopy.
+**Current next action:** Independent final-batch audit of Volume 1 Chapters 13–Closing.
 
-**DO NOT START:** Chapter 14 before Chapter 13 independent audit passes.
+**DO NOT START:** Volume 2 production before Volume 1 final-batch independent audit is completed.
 
 ## Canonical status rule
 
