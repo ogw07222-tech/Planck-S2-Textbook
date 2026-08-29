@@ -240,7 +240,7 @@ $$
 
 이다.
 
-이 차이를 놓치면 나중에 **configuration**이라는 말을 배울 때 “한 점”과 “장 전체 배치”를 혼동하게 된다.
+이 차이를 놓치면 나중에 **configuration**[^v1c05-configuration]이라는 말을 배울 때 “한 점”과 “장 전체 배치”를 혼동하게 된다.
 
 ---
 
@@ -297,7 +297,7 @@ $$
 
 ### 조금 더 정확한 주의
 
-굽은 다양체 위의 **접벡터장(tangent vector field)** 은 각 점 $x$마다 그 점의 접공간 $T_xM$에 속하는 벡터를 고른다. 그래서 엄밀하게는 단순히 모든 벡터가 하나의 고정된 $\mathbb R^n$ target에 들어간다고만 말하면 부족할 수 있고, tangent bundle $TM$의 section으로 표현한다.
+굽은 다양체 위의 **접벡터장(tangent vector field)** 은 각 점 $x$마다 그 점의 접공간[^v1c05-tangent-space] $T_xM$에 속하는 벡터를 고른다. 그래서 엄밀하게는 단순히 모든 벡터가 하나의 고정된 $\mathbb R^n$ target에 들어간다고만 말하면 부족할 수 있고, tangent bundle $TM$의 section[^v1c05-tangent-bundle-section]으로 표현한다.
 
 이 책에서는 아직 fiber bundle을 배우지 않았으므로 여기서는 이 사실을 “각 점에서 허용되는 벡터 공간이 달라질 수도 있다”는 경고 정도로만 남긴다.
 
@@ -416,7 +416,7 @@ $$
 
 G02 §4의 모델 언어를 풀면 다음과 같다.
 
-> domain $S^2$의 각 점에 internal $S^2$의 방향 하나를 대응시키는 non-spinorial direction field $n$을 둔다.
+> domain $S^2$의 각 점에 internal $S^2$의 방향 하나를 대응시키는 non-spinorial[^v1c05-non-spinorial] direction field $n$을 둔다.
 
 이 선택에는 중요한 연구 전략이 있었다.
 
@@ -456,7 +456,7 @@ $$
 
 ### G05 — 장의 “모양” 자체가 연구 대상이 됨
 
-후속 G05에서는 degree-one configuration의 moduli와 shape/concentration 문제가 등장한다. 즉 같은 topological sector 안에서도 장의 분포가 여러 방식으로 달라질 수 있다는 문제가 중요해졌다. 이 책에서는 그 상세한 moduli와 양자화 문제를 제3권에서 다룬다. 여기서는 “장 전체의 배치가 단순한 한 방향보다 훨씬 많은 정보를 가진다”는 사실만 기억하면 된다. G05의 정확한 source 역할은 [source index](../sources/source-index.md)에 기록되어 있다.
+후속 G05에서는 degree-one configuration의 moduli[^v1c05-moduli]와 shape/concentration 문제가 등장한다. 즉 같은 topological sector 안에서도 장의 분포가 여러 방식으로 달라질 수 있다는 문제가 중요해졌다. 이 책에서는 그 상세한 moduli와 양자화 문제를 제3권에서 다룬다. 여기서는 “장 전체의 배치가 단순한 한 방향보다 훨씬 많은 정보를 가진다”는 사실만 기억하면 된다. G05의 정확한 source 역할은 [source index](../sources/source-index.md)에 기록되어 있다.
 
 ---
 
@@ -744,3 +744,13 @@ G02는 프로젝트를 exploratory theoretical model로 규정하고, 기본입�
 - **독립 감사:** PASS — 2026-08-29
 - **다음 작업:** 제6장 DRAFT 제작 허용
 - **감사 결과:** PASS — Chapter 6 DRAFT APPROVED
+
+[^v1c05-configuration]: 한 점의 값 하나가 아니라, 공간 전체에 걸친 장의 배치 하나를 뜻한다. 제9장에서 정식으로 배운다.
+
+[^v1c05-tangent-space]: 곡면의 한 점을 아주 가까이 확대했을 때 그 점에서 움직일 수 있는 접선 방향들을 모은 벡터 공간이다.
+
+[^v1c05-tangent-bundle-section]: 각 점마다 붙는 접공간들을 한데 모은 것이 tangent bundle이고, 그 묶음에서 점마다 벡터 하나를 고르는 규칙을 section이라고 한다. 지금은 “점마다 허용되는 벡터 공간이 달라질 수 있다”는 뜻만 기억하면 된다.
+
+[^v1c05-non-spinorial]: 처음부터 스피너의 특수한 회전 변환법칙을 기본 변수에 넣지 않는다는 프로젝트 표현이다. 이것만으로 스피너 물리가 배제되었다는 뜻은 아니다.
+
+[^v1c05-moduli]: 같은 큰 조건을 만족하면서도 연속적으로 달라질 수 있는 해들의 모양이나 매개변수를 가리키는 말. 제3권에서 자세히 다룬다.

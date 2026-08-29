@@ -23,7 +23,7 @@
 5. $Q=0$이면 장이 아무 구조도 없다는 뜻일까?
 6. $Q=2$이면 입자가 두 개라는 뜻일까?
 7. 왜 서로 아주 다르게 생긴 두 map이 같은 $Q$를 가질 수 있을까?
-8. Planck-S²가 $Q=1$ sector를 고른다는 것은 무엇을 뜻하고, 무엇을 뜻하지 않을까?
+8. Planck-S²가 $Q=1$ sector[^v1c07-sector]를 고른다는 것은 무엇을 뜻하고, 무엇을 뜻하지 않을까?
 
 ---
 
@@ -66,7 +66,7 @@ map 전체를 정확히 기록하려면 사실상 domain의 모든 점에서 $n(
 
 그런데 때로는 map의 세세한 모양을 조금 바꾸어도 변하지 않는 **큰 특징**이 있다.
 
-예를 들어 고무판에 그린 세계지도를 조금 늘이거나 찌그러뜨렸다고 하자. 나라의 모양이나 거리 비율은 달라질 수 있지만, 지도를 찢거나 붙이지 않는 한 “구 전체를 몇 번, 어떤 orientation으로 덮고 있는가?”와 같은 전역적인 정보는 유지될 수 있다.
+예를 들어 고무판에 그린 세계지도를 조금 늘이거나 찌그러뜨렸다고 하자. 나라의 모양이나 거리 비율은 달라질 수 있지만, 지도를 찢거나 붙이지 않는 한 “구 전체를 몇 번, 어떤 orientation[^v1c07-orientation]으로 덮고 있는가?”와 같은 전역적인 정보는 유지될 수 있다.
 
 수학에서는 이런 전역적 정보를 정수로 기록하는 대표적인 방법이 degree다.
 
@@ -96,7 +96,7 @@ domain의 북쪽은 target의 북쪽으로, 적도는 적도로, 남쪽은 남�
 
 ### 장면 D
 
-target의 평범한 한 점을 골랐더니 domain에 그 점으로 가는 preimage가 두 곳 나타나고, 두 곳 모두 local orientation을 같은 방향으로 보탠다.
+target의 평범한 한 점을 골랐더니 domain에 그 점으로 가는 preimage[^v1c07-preimage]가 두 곳 나타나고, 두 곳 모두 local orientation을 같은 방향으로 보탠다.
 
 이런 대표적인 degree-$2$ map에서는 두 local contribution이 합쳐져 $Q=2$가 된다.
 
@@ -216,7 +216,7 @@ $Q=-1$은 “한 번”의 전역적 감김에 orientation reversal이 들어간
 
 ![F012 degree Q=2](../figures/volume-1/F012.svg)
 
-**그림 F012. degree $Q=2$의 local-degree 직관 — 일반적인 target 점 $y$에 두 preimage가 있고 두 local contribution이 $+1$씩 더해지는 대표 그림. 개념도, 실제 크기/비율 아님**
+**그림 F012. degree $Q=2$의 local-degree[^v1c07-local-degree] 직관 — 일반적인 target 점 $y$에 두 preimage가 있고 두 local contribution이 $+1$씩 더해지는 대표 그림. 개념도, 실제 크기/비율 아님**
 
 ### [이 그림에서 볼 것]
 
@@ -296,7 +296,7 @@ $$
 
 ### 왜 정수일까?
 
-조금 더 높은 수준의 수학에서는 $S^2$의 top-dimensional homology group이
+조금 더 높은 수준의 수학에서는 $S^2$의 top-dimensional homology group[^v1c07-homology]이
 
 $$
 H_2(S^2)\cong\mathbb Z
@@ -762,3 +762,13 @@ $+1+(-1)=0$이다. 이 때문에 degree $0$ map도 local하게는 복잡할 수 
 - **금지 승격:** $Q=1\not\Rightarrow1$ bit, charge $-e$, 실제 전자 증명
 - **다음 작업:** Independent audit of Chapter 7
 - **DO NOT START:** Chapter 8 before Chapter 7 audit PASS
+
+[^v1c07-sector]: 같은 조건이나 분류값을 공유하는 상태들을 한 부류로 묶어 부르는 말. 여기서는 주로 같은 degree $Q$를 가진 map들의 부류를 뜻한다.
+
+[^v1c07-orientation]: 공간에서 어느 방향 순서를 같은 방향으로 볼지 정하는 구조. 거울 반사는 이 순서를 뒤집는 대표적인 예다.
+
+[^v1c07-preimage]: target의 특정 값 $y$로 보내지는 domain 쪽 입력들의 집합. 쉽게 말하면 “결과가 $y$가 되게 만드는 입력들은 어디인가?”를 묻는 것이다.
+
+[^v1c07-local-degree]: target의 한 점 $y$로 가는 각 preimage 근처에서 map이 방향을 보존($+1$)하거나 뒤집는($-1$)지를 세는 국소 기여값. 적절한 조건에서 이 기여들을 더하면 전체 degree를 얻는다.
+
+[^v1c07-homology]: 공간의 구멍이나 주기 구조를 정수 같은 대수적 자료로 기록하는 위상수학 도구. 여기서는 $S^2$의 2차원 기본 주기가 정수 하나로 세어진다는 배경만 사용한다.
