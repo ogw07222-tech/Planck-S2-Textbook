@@ -1,16 +1,16 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
-> VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 제1권 마무리 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 이 장은 제1권의 도달점과 한계를 정리하며 제2권 결과를 미리 증명하지 않는다.
+> VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 이 장은 제1권의 도달점과 한계를 정리하며 제2권 결과를 미리 증명하지 않는다.
 
 # 마무리 · 우리가 지금까지 온 길 / 다음 권이 필요한 이유
 
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **역할:** 제1권 전체 dependency chain 복습과 physical boundary 고정
 - **다음 허용 작업:** Independent final-batch audit of Volume 1 Chapters 13–Closing
-- **DO NOT START:** Volume 2 production before Volume 1 final-batch independent audit is completed
+- **후속 상태:** Volume 2 DRAFT production approved; scientific PASS remains independent-audit only
 
 ---
 
@@ -645,9 +645,9 @@ nontrivial loop class를 대표하는 loop를 두 번 concatenation하면 trivia
 
 - **Canonical file:** `volume-1/17-closing.md`
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **작성자 자체 PASS:** 부여하지 않음
 - **제1권 전체 본문:** Chapters 1–16 + Closing DRAFT 존재
-- **다음 작업:** Independent final-batch audit of Volume 1 Chapters 13–Closing
-- **DO NOT START:** Volume 2 production before Volume 1 final-batch independent audit is completed
+- **독립 감사:** PASS — 2026-08-29
+- **후속 상태:** Volume 2 DRAFT production approved; scientific PASS remains independent-audit only
 - **전체 이론 상태:** WORKING HYPOTHESIS

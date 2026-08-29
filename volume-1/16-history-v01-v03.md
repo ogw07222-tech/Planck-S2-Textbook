@@ -1,13 +1,13 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
-> VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 역사/감사 초안이다. 작성 Chat은 PASS를 부여하지 않으며, 과거 문장의 현재 판정은 frozen baseline과 `sources/proof-status.md`를 따른다.
+> VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 과거 문장의 현재 판정은 frozen baseline과 `sources/proof-status.md`를 따른다.
 
 # 16장 · v0.1에서 v0.3 직전까지: 왜 여기까지 왔나
 
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **역할:** 제1권에서 배운 개념이 초기 Planck-S² 연구에서 어떤 순서로 등장했는지 추적
 - **새 증명:** 없음
 - **핵심 경계:** 연구가 한 방향으로 좁혀졌다는 사실은 그 방향이 실제 전자 이론으로 증명됐다는 뜻이 아니다.
@@ -476,10 +476,10 @@ FR은 topology와 quantum-state boundary condition을 연결하는 추가 구조
 - **Canonical file:** `volume-1/16-history-v01-v03.md`
 - **새 증명:** 없음
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **작성자 자체 PASS:** 부여하지 않음
 - **핵심 편집 원칙:** 당시 연구 생각 / 당시 claim / 현재 판정을 분리
-- **다음 작업:** FINAL BATCH 규칙에 따른 Volume 1 Closing DRAFT
+- **독립 감사:** PASS — 2026-08-29
 
 [^v1c16-spinor]: 공간을 한 바퀴 회전했을 때 일반적인 3차원 벡터와 다른 방식으로 변환할 수 있는 양자상태의 수학 언어다. 정식 정의는 제2권에서 다룬다.
 

@@ -1,13 +1,13 @@
-> **STATUS: DRAFT COMPLETE · AUDIT PENDING**
+> **STATUS: DRAFT COMPLETE · PASS**
 >
-> VOLUME 1 FINAL BATCH DRAFT MODE에서 작성한 초안이다. 작성 Chat은 PASS를 부여하지 않는다. 이 장은 fundamental group의 표준 언어만 준비하며 Planck-S²의 특정 $\pi_1$ 값은 제15장에서 조건과 함께 다룬다.
+> VOLUME 1 FINAL BATCH DRAFT MODE에서 작성된 뒤 독립 감사 PASS를 받았다. 이 장은 fundamental group의 표준 언어만 준비하며 Planck-S²의 특정 $\pi_1$ 값은 제15장에서 조건과 함께 다룬다.
 
 # 14장 · 기본군을 “loop의 종류표”로 이해하기
 
 ## 현재 상태
 
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **선행 장 사용 방식:** 제13장 초안의 homotopy 언어를 사용하되, 표준 정의와 frozen baseline을 우선한다.
 - **다음 배치 대상:** 제15장 DRAFT
 - **핵심 경계:** $\pi_1$는 loop의 단순 개수가 아니라 based loop들의 homotopy class와 이어붙이기 연산으로 만든 group이다.
@@ -567,10 +567,10 @@ path 함수로서는 parameter 분할 방식이 달라질 수 있지만 그 차�
 
 - **Canonical file:** `volume-1/14-fundamental-group.md`
 - **작성 상태:** DRAFT COMPLETE
-- **감사 상태:** AUDIT PENDING
+- **감사 상태:** PASS
 - **작성자 자체 PASS:** 부여하지 않음
 - **핵심 목적:** 제15장의 $\mathbb Z_2$ 결과를 읽기 위한 표준 fundamental-group 언어 구축
-- **다음 작업:** FINAL BATCH 규칙에 따른 Chapter 15 DRAFT
+- **독립 감사:** PASS — 2026-08-29
 
 [^v1c14-based-loop]: 미리 정한 한 점에서 출발해 같은 점으로 돌아오는 loop다. fundamental group에서는 이 기준점을 고정해 비교한다.
 

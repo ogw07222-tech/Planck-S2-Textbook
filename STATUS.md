@@ -16,15 +16,15 @@
 | 10 | DRAFT COMPLETE | PASS |
 | 11 | DRAFT COMPLETE | PASS |
 | 12 | DRAFT COMPLETE | PASS |
-| 13 | DRAFT COMPLETE | AUDIT PENDING |
-| 14 | DRAFT COMPLETE | AUDIT PENDING |
-| 15 | DRAFT COMPLETE | AUDIT PENDING |
-| 16 | DRAFT COMPLETE | AUDIT PENDING |
-| Closing | DRAFT COMPLETE | AUDIT PENDING |
+| 13 | DRAFT COMPLETE | PASS |
+| 14 | DRAFT COMPLETE | PASS |
+| 15 | DRAFT COMPLETE | PASS |
+| 16 | DRAFT COMPLETE | PASS |
+| Closing | DRAFT COMPLETE | PASS |
 
-**Current next action:** Independent final-batch audit of Volume 1 Chapters 13–Closing.
+**Current next action:** Begin Volume 2 DRAFT production from `volume-2/README.md`, after re-reading MASTER.md and sources/proof-status.md.
 
-**DO NOT START:** Volume 2 production before Volume 1 final-batch independent audit is completed.
+**Volume 1 final audit:** PASS — Volume 2 DRAFT production approved. Volume 2 scientific PASS remains independent-audit only.
 
 ## Canonical status rule
 
