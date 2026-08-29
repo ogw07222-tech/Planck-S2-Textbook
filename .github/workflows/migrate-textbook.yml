@@ -1,0 +1,40 @@
+name: Migrate textbook archive
+
+on:
+  push:
+    paths:
+      - '.github/workflows/migrate-textbook.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Expand migration archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/planck-migration
+          mkdir -p /tmp/planck-migration
+          unzip -q Planck-S2-Textbook-migration.zip -d /tmp/planck-migration
+          if [ -d /tmp/planck-migration/Planck-S2-Textbook ]; then
+            src=/tmp/planck-migration/Planck-S2-Textbook
+          else
+            src=/tmp/planck-migration
+          fi
+          rm -rf "$src/.git"
+          cp -a "$src/." ./
+          rm -f Planck-S2-Textbook-migration.zip WRITE-TEST.md
+
+      - name: Commit migration
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'migration: unpack Planck-S2 textbook repository'
