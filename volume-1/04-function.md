@@ -28,7 +28,7 @@ G02는 각 domain $S^2$의 점에 internal $S^2$의 방향 하나를 대응시�
 
 ## 그림으로 이해하기 · domain에서 target으로
 
-![F005 함수: domain에서 target으로](../figures/volume-1/F005.png)
+![F005 함수: domain에서 target으로](../figures/volume-1/F005.svg)
 
 **그림 F005. 함수 $f:X\to Y$ — domain $X$의 각 입력에 target $Y$의 출력 하나를 대응시킨다. 개념도, 실제 크기/비율 아님**
 
@@ -84,7 +84,7 @@ $$
 
 ## 그림으로 이해하기 · 출력은 숫자만이 아니다
 
-![F1X02 숫자·색·방향 map 비교](../figures/volume-1/F1X02.png)
+![F1X02 숫자·색·방향 map 비교](../figures/volume-1/F1X02.svg)
 
 **그림 F1X02. 숫자→숫자, 점→색, 점→방향의 세 가지 map 비교 — 개념도, 실제 크기/비율 아님**
 
