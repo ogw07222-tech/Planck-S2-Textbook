@@ -21,10 +21,11 @@
 | **F012** | 제1권 | 7장 | Q=2 감김 | local-degree 합으로 degree 2 직관 | 두 물리적 sheet/두 입자/2 bit로 문자 그대로 해석 금지 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F1X04** | 제1권 | 7장 | orientation 보존/반전 표식 비교 | degree 부호를 local orientation 순서로 직관화 | 표식은 수학적 orientation 개념도이며 실제 물질 화살표가 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F1X05** | 제1권 | 8장 | Q=1이 말하는 것 / 말하지 않는 것 | degree와 bit·charge·electron identity의 정의 경계를 한눈에 분리 | 오른쪽 항목이 영원히 불가능하다는 뜻이 아니라 현재 bridge가 미증명이라는 뜻 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
-| **F013** | 제1권 | 9장 | configuration 한 점 vs 화살표 전체 | 한 configuration의 의미 | domain의 한 점과 configuration-space의 한 점 구분 | NEEDED |
-| **F014** | 제1권 | 10장 | configuration space = 모양 박물관 | 가능한 전체 field configuration들의 공간 | 실제 차원이 2D 박물관인 것처럼 오해 금지 | NEEDED |
-| **F015** | 제1권 | 11장 | 박물관 속 path | 연속 configuration family | 시간진화와 단순 수학 path는 구분 | NEEDED |
-| **F016** | 제1권 | 12장 | 닫힌 loop | 출발 configuration으로 돌아오는 경로 | 같은 endpoint가 같은 homotopy class를 뜻하지 않음 | NEEDED |
+| **F013** | 제1권 | 9장 | configuration 한 점 vs 화살표 전체 | 한 configuration의 의미 | domain의 한 점과 configuration-space의 한 점 구분 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
+| **F014** | 제1권 | 10장 | configuration space = 모양 박물관 | 가능한 전체 field configuration들의 공간 | 실제 차원이 2D 박물관인 것처럼 오해 금지 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
+| **F1X06** | 제1권 | 10장 | Map(S²,S²)의 degree별 component | 전체 mapping space와 Map₁ component 관계 | actual physical configuration space가 ideal Map과 동일하다는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
+| **F015** | 제1권 | 11장 | 박물관 속 path | 연속 configuration family | 시간진화와 단순 수학 path는 구분 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
+| **F016** | 제1권 | 12장 | 닫힌 loop | 출발 configuration으로 돌아오는 경로 | 같은 endpoint가 같은 homotopy class를 뜻하지 않음 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
 | **F017** | 제1권 | 13장 | contractible vs noncontractible loop | 고무줄 수축 직관 | 구체 topology는 실제 configuration space에 따라 달라짐 | NEEDED |
 | **F018** | 제1권 | 15장 | Z₂ 두 칸 상태표 | trivial/nontrivial, generator+generator=trivial | Z₂를 ±1 값 그 자체와 동일시하지 않기 | NEEDED |
 | **F019** | 제2권 | 2장 | 3축 회전과 SO(3) | 3D orientation group 직관 | SO(3) group manifold 자체를 평범한 구로 그리지 않기 | NEEDED |
