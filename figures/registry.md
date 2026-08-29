@@ -16,10 +16,11 @@
 | **F007** | 제1권 | 6장 | domain S²와 target S² 나란히 놓기 | S²→S²를 두 개의 구로 분리 | 두 구가 실제 공간에 함께 존재한다는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F008** | 제1권 | 6장 | 한 domain 점의 화살표가 target 점을 고르는 그림 | n(x)의 의미 | target은 방향공간일 수 있으며 domain tangent vector와 자동 동일시하지 않기 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F009** | 제1권 | 7장 | Q=0 감김 | degree 0의 가장 단순한 대표 예 | 상수 map은 대표 예일 뿐 모든 Q=0 map이 상수는 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
-| **F010** | 제1권 | 7장 | Q=+1 감김 | orientation-preserving degree +1 직관 | Q=1=charge/bit/electron 자동 동일시 금지 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
+| **F010** | 제1권 | 7·8장 | Q=+1 감김 | orientation-preserving degree +1 직관; 8장에서 Q=1 의미 경계 재사용 | Q=1=charge/bit/electron 자동 동일시 금지 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS (Ch.7) · REUSED IN Ch.8 AUDIT PENDING** |
 | **F011** | 제1권 | 7장 | Q=−1 감김 | orientation reversal과 degree 부호 | 음의 degree를 음의 에너지·전하·반입자로 자동 해석 금지 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F012** | 제1권 | 7장 | Q=2 감김 | local-degree 합으로 degree 2 직관 | 두 물리적 sheet/두 입자/2 bit로 문자 그대로 해석 금지 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F1X04** | 제1권 | 7장 | orientation 보존/반전 표식 비교 | degree 부호를 local orientation 순서로 직관화 | 표식은 수학적 orientation 개념도이며 실제 물질 화살표가 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
+| **F1X05** | 제1권 | 8장 | Q=1이 말하는 것 / 말하지 않는 것 | degree와 bit·charge·electron identity의 정의 경계를 한눈에 분리 | 오른쪽 항목이 영원히 불가능하다는 뜻이 아니라 현재 bridge가 미증명이라는 뜻 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
 | **F013** | 제1권 | 9장 | configuration 한 점 vs 화살표 전체 | 한 configuration의 의미 | domain의 한 점과 configuration-space의 한 점 구분 | NEEDED |
 | **F014** | 제1권 | 10장 | configuration space = 모양 박물관 | 가능한 전체 field configuration들의 공간 | 실제 차원이 2D 박물관인 것처럼 오해 금지 | NEEDED |
 | **F015** | 제1권 | 11장 | 박물관 속 path | 연속 configuration family | 시간진화와 단순 수학 path는 구분 | NEEDED |
