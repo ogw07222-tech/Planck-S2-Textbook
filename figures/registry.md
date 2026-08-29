@@ -13,8 +13,8 @@
 | **F1X02** | 제1권 | 4장 | 숫자→숫자 / 점→색 / 점→방향 map 비교 | 출력이 숫자에 한정되지 않음을 직관화 | 세 예시는 서로 다른 map 유형이며 Planck-S² 물리 증명이 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F006** | 제1권 | 5장 | 구 위의 스칼라값과 화살표 비교 | scalar/vector/unit-vector field 차이 | 화살표는 시각화; 실제 전자 표면의 바늘이 아니며 unit field에서는 방향이 핵심 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F1X03** | 제1권 | 5장 | 온도 지도 vs 바람 방향 지도 | 스칼라장과 방향/벡터장을 일상 지도에서 비교 | 실제 기상 데이터가 아니며 field가 반드시 유체라는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
-| **F007** | 제1권 | 6장 | domain S²와 target S² 나란히 놓기 | S²→S²를 두 개의 구로 분리 | 두 구가 실제 공간에 함께 존재한다는 뜻 아님 | NEEDED |
-| **F008** | 제1권 | 6장 | 한 domain 점의 화살표가 target 점을 고르는 그림 | n(x)의 의미 | target은 방향공간일 수 있음 | NEEDED |
+| **F007** | 제1권 | 6장 | domain S²와 target S² 나란히 놓기 | S²→S²를 두 개의 구로 분리 | 두 구가 실제 공간에 함께 존재한다는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
+| **F008** | 제1권 | 6장 | 한 domain 점의 화살표가 target 점을 고르는 그림 | n(x)의 의미 | target은 방향공간일 수 있으며 domain tangent vector와 자동 동일시하지 않기 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
 | **F009** | 제1권 | 7장 | Q=0 감김 | degree 0의 직관 | 정확한 degree 계산을 색상/방향으로 과도 단순화하지 않기 | NEEDED |
 | **F010** | 제1권 | 7장 | Q=+1 감김 | 한 번 orientation-preserving wrapping | Q=1=charge/bit 오해 금지 | NEEDED |
 | **F011** | 제1권 | 7장 | Q=−1 감김 | orientation reversal 포함 | 음의 degree를 음의 에너지로 오해 금지 | NEEDED |
