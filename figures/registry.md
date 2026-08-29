@@ -26,8 +26,8 @@
 | **F1X06** | 제1권 | 10장 | Map(S²,S²)의 degree별 component | 전체 mapping space와 Map₁ component 관계 | actual physical configuration space가 ideal Map과 동일하다는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F015** | 제1권 | 11장 | 박물관 속 path | 연속 configuration family | 시간진화와 단순 수학 path는 구분 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F016** | 제1권 | 12장 | 닫힌 loop | 출발 configuration으로 돌아오는 경로 | 같은 endpoint가 같은 homotopy class를 뜻하지 않음 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
-| **F017** | 제1권 | 13장 | contractible vs noncontractible loop | 고무줄 수축 직관 | 구체 topology는 실제 configuration space에 따라 달라짐 | NEEDED |
-| **F018** | 제1권 | 15장 | Z₂ 두 칸 상태표 | trivial/nontrivial, generator+generator=trivial | Z₂를 ±1 값 그 자체와 동일시하지 않기 | NEEDED |
+| **F017** | 제1권 | 13장 | contractible vs noncontractible loop | 고무줄 수축 직관 | 개념도이며 실제 Planck-S² configuration space 모양 아님; 어느 loop가 nontrivial인지는 공간 topology에 의존 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
+| **F018** | 제1권 | 15장 | Z₂ 두 칸 상태표 | trivial/nontrivial, generator+generator=trivial | Z₂를 ±1 quantum phase 그 자체와 동일시하지 않기 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PENDING** |
 | **F019** | 제2권 | 2장 | 3축 회전과 SO(3) | 3D orientation group 직관 | SO(3) group manifold 자체를 평범한 구로 그리지 않기 | NEEDED |
 | **F020** | 제2권 | 3장 | 360°/720° 회전 경로 비교 | 최종 orientation과 경로 class 구분 | belt trick은 비유이며 field proof가 아님 | NEEDED |
 | **F021** | 제2권 | 4장 | 공간회전으로 n_t 만들기 | domain precomposition의 시각화 | target 회전과 spatial 회전을 혼동하지 않기 | NEEDED |
