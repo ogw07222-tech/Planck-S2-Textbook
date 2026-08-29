@@ -82,7 +82,7 @@ $$
 n:S^2_{\rm domain}\to S^2_{\rm internal}
 $$
 
-처럼 쓴다. 즉 domain의 한 점만 보는 것이 아니라, **domain 전체의 모든 점에서 값 $n(x)$이 어떻게 배치되어 있는지**를 보려 한다. G02 원문은 이를 “각 domain $S^2$의 점에 internal $S^2$의 방향 하나를 대응시키는 비스피너 방향장”으로 설명한다. fileciteturn42file0
+처럼 쓴다. 즉 domain의 한 점만 보는 것이 아니라, **domain 전체의 모든 점에서 값 $n(x)$이 어떻게 배치되어 있는지**를 보려 한다. G02 §4는 이를 “각 domain $S^2$의 점에 internal $S^2$의 방향 하나를 대응시키는 비스피너 방향장”으로 설명한다. 이 장에서는 이 표현을 프로젝트 source의 모델 언어로만 사용한다. 자세한 source ID와 역할은 [source index](../sources/source-index.md)를 따른다.
 
 하지만 여기서 곧바로 Planck-S²의 물리 가설을 받아들이면 안 된다. 먼저 표준적인 장의 뜻부터 배운다.
 
@@ -272,7 +272,7 @@ $$
 
 온도나 밀도처럼 “크기를 숫자 하나로 나타내는 값”이 대표적인 비유다.
 
-MIT의 벡터미적분 보조 자료도 위치에 따라 변하는 온도를 scalar quantity의 예로 설명한다. OpenStax는 vector field를 domain의 각 점에 벡터를 하나씩 배정하는 것으로 정의한다.
+MIT의 벡터미적분 보조 자료는 위치에 따라 변하는 온도를 scalar quantity의 예로 설명한다. 표준 vector field 정의와 함께 아래 source ledger에 기록한다.
 
 ### 2. 벡터장 vector field
 
@@ -293,7 +293,7 @@ $$
 
 바람의 속도장을 그릴 때 화살표 방향으로 바람 방향을, 화살표 길이로 속력의 크기를 표시할 수 있다.
 
-OpenStax의 표준 정의도 $\mathbb R^2$ 또는 $\mathbb R^3$의 각 점에 벡터를 하나씩 배정하는 방식으로 vector field를 설명한다. citeturn190997search0
+[OpenStax Calculus Volume 3, §6.1 “Vector Fields”](https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields)는 $\mathbb R^2$ 또는 $\mathbb R^3$의 각 점에 벡터를 하나씩 배정하는 방식으로 vector field를 정의한다.
 
 ### 조금 더 정확한 주의
 
@@ -301,7 +301,7 @@ OpenStax의 표준 정의도 $\mathbb R^2$ 또는 $\mathbb R^3$의 각 점에 �
 
 이 책에서는 아직 fiber bundle을 배우지 않았으므로 여기서는 이 사실을 “각 점에서 허용되는 벡터 공간이 달라질 수도 있다”는 경고 정도로만 남긴다.
 
-그리고 이것은 Planck-S²의 $n$장과도 중요한 차이가 있다. 프로젝트의 $n(x)$는 **domain 구면의 접벡터라고 자동으로 가정하지 않는다.** G02에서 $n$은 별도의 internal $S^2$ 값을 고르는 방향장 후보다. fileciteturn42file0
+그리고 이것은 Planck-S²의 $n$장과도 중요한 차이가 있다. 프로젝트의 $n(x)$는 **domain 구면의 접벡터라고 자동으로 가정하지 않는다.** G02에서 $n$은 별도의 internal $S^2$ 값을 고르는 방향장 후보다.
 
 ### 3. 단위벡터장 unit-vector field
 
@@ -321,7 +321,7 @@ $$
 n(x)\in S^2.
 $$
 
-OpenStax도 모든 벡터의 magnitude가 1인 vector field를 unit vector field라고 설명하며, 이 경우 핵심 정보가 방향이라고 설명한다. citeturn190997search0
+OpenStax의 같은 절은 모든 벡터의 magnitude가 1인 vector field를 unit vector field라고 설명하며, 이 경우 핵심 정보가 방향이라고 설명한다.
 
 ---
 
@@ -402,7 +402,7 @@ $$
 
 그리고 화살표는 그림을 위한 표시다. 실제 전자의 표면에 미세한 금속 바늘 같은 물체가 박혀 있다는 뜻이 아니다.
 
-더 나아가 Planck-S²의 $S^2$ 자체도 실제 3차원 공간에 놓인 물질 껍질이라고 확정된 것이 아니다. G02는 이를 내부 정보공간 또는 경계 자유도로 해석할 수도 있다고 명시한다. fileciteturn42file7
+더 나아가 Planck-S²의 $S^2$ 자체도 실제 3차원 공간에 놓인 물질 껍질이라고 확정된 것이 아니다. G02 §2는 이를 내부 정보공간 또는 경계 자유도로 해석할 수도 있다고 명시한다.
 
 ---
 
@@ -414,9 +414,9 @@ $$
 n:S^2_{\rm domain}\to S^2_{\rm internal}.
 $$
 
-원문의 의미는 다음과 같다.
+G02 §4의 모델 언어를 풀면 다음과 같다.
 
-> domain $S^2$의 각 점에 internal $S^2$의 방향 하나를 대응시키는 non-spinorial direction field $n$을 둔다. fileciteturn42file0
+> domain $S^2$의 각 점에 internal $S^2$의 방향 하나를 대응시키는 non-spinorial direction field $n$을 둔다.
 
 이 선택에는 중요한 연구 전략이 있었다.
 
@@ -434,7 +434,7 @@ $$
 
 ### G01 — 내부/경계 자유도라는 최초 아이디어
 
-초기 G01은 Planck 규모 $S^2$형 내부/경계와 그 위의 내부 자유도를 후보로 두었다. 이 단계는 아직 구체적인 $n:S^2\to S^2$ 방향장 구조가 완성된 단계가 아니라, **낮은 차원의 내부/경계 자유도라는 아이디어를 시험하기 시작한 단계**였다. 프로젝트 연대기에서도 이 단계 전체는 WORKING HYPOTHESIS로 기록된다. fileciteturn41file5
+초기 G01은 Planck 규모 $S^2$형 내부/경계와 그 위의 내부 자유도를 후보로 두었다. 이 단계는 아직 구체적인 $n:S^2\to S^2$ 방향장 구조가 완성된 단계가 아니라, **낮은 차원의 내부/경계 자유도라는 아이디어를 시험하기 시작한 단계**였다. 프로젝트 연대기에서도 이 단계 전체는 WORKING HYPOTHESIS로 기록된다.
 
 ### G02 — 방향장 $n$을 1순위 후보로 구체화
 
@@ -444,7 +444,7 @@ $$
 n:S^2_{\rm domain}\to S^2_{\rm internal}.
 $$
 
-이제 “구 위의 어떤 정보가 있다” 수준을 넘어, 각 domain 점에서 하나의 internal direction을 고르는 **장 전체**를 수학적 연구 대상으로 삼게 되었다. fileciteturn42file0
+이제 “구 위의 어떤 정보가 있다” 수준을 넘어, 각 domain 점에서 하나의 internal direction을 고르는 **장 전체**를 수학적 연구 대상으로 삼게 되었다.
 
 이 선택 덕분에 다음 질문이 가능해졌다.
 
@@ -456,7 +456,7 @@ $$
 
 ### G05 — 장의 “모양” 자체가 연구 대상이 됨
 
-후속 G05에서는 degree-one configuration의 moduli와 shape/concentration 문제가 등장한다. 즉 같은 topological sector 안에서도 장의 분포가 여러 방식으로 달라질 수 있다는 문제가 중요해졌다. 이 책에서는 그 상세한 moduli와 양자화 문제를 제3권에서 다룬다. 여기서는 “장 전체의 배치가 단순한 한 방향보다 훨씬 많은 정보를 가진다”는 사실만 기억하면 된다. fileciteturn39file0
+후속 G05에서는 degree-one configuration의 moduli와 shape/concentration 문제가 등장한다. 즉 같은 topological sector 안에서도 장의 분포가 여러 방식으로 달라질 수 있다는 문제가 중요해졌다. 이 책에서는 그 상세한 moduli와 양자화 문제를 제3권에서 다룬다. 여기서는 “장 전체의 배치가 단순한 한 방향보다 훨씬 많은 정보를 가진다”는 사실만 기억하면 된다. G05의 정확한 source 역할은 [source index](../sources/source-index.md)에 기록되어 있다.
 
 ---
 
@@ -472,7 +472,7 @@ A10.8 계열의 selection-axiom 정리는 baseline model class에서
 
 조건을 **선택 공리**로 명시했다.
 
-그러나 감사 문서는 이것이 자연법칙에서 증명된 사실이 아니라 모델 class를 정의하는 선택이라고 분명히 경고한다. 즉 **final field content의 필연성은 OPEN**이다. fileciteturn42file5
+그러나 R07/R08 계열 감사와 frozen baseline은 이것이 자연법칙에서 증명된 사실이 아니라 모델 class를 정의하는 선택이라고 분명히 경고한다. 즉 **final field content의 필연성은 OPEN**이다. 현재 상세 판정은 [proof-status ledger](../sources/proof-status.md)를 따른다.
 
 이 구분은 매우 중요하다.
 
@@ -719,15 +719,15 @@ unit-vector field는 각 벡터의 **길이**가 1이라는 뜻이다. 벡터의
 | **R07/R08 계열** | A10.8 action-selection axioms 및 후속 감사 | n-only field content가 자연법칙의 증명이 아니라 model-class selection assumption이라는 현재 경계 | [적대적 감사/검증] |
 | **C02 frozen baseline** | Gate C 최신 기준선 | target ontology/physical interpretation이 최종 폐쇄되지 않았다는 프로젝트 전체 경계 유지 | [적대적 감사] |
 
-G02 원문은 프로젝트를 “exploratory theoretical model”로 규정하고, 기본입자의 실제 S² 내부/경계를 확립된 사실로 제시하지 않는다. 또한 $n:S^2\to S^2$를 non-spinorial direction field 후보로 둔다. fileciteturn42file7
+G02는 프로젝트를 exploratory theoretical model로 규정하고, 기본입자의 실제 S² 내부/경계를 확립된 사실로 제시하지 않는다. 또한 $n:S^2\to S^2$를 non-spinorial direction field 후보로 둔다. 프로젝트 문서의 파일명·역할·판정 우선순위는 [source index](../sources/source-index.md)와 [proof-status ledger](../sources/proof-status.md)를 기준으로 한다.
 
 ### 외부 표준 source
 
 | Source | 이 장에서 확인하는 표준 내용 | 자료 종류 |
 |---|---|---|
-| OpenStax, *Calculus Volume 3*, §6.1 “Vector Fields” | domain의 각 점에 vector를 배정하는 vector field 정의; unit vector field의 magnitude가 1이라는 정의 | [외부 문헌] |
-| MIT OpenCourseWare, *Calculus*, Chapter 15 “Vector Fields” | 점마다 vector가 하나씩 있는 field라는 직관과 표준 vector-field 정의 | [외부 문헌] |
-| MIT OpenCourseWare, *An Introduction to Vector Calculus* | 위치에 따라 달라지는 temperature를 scalar quantity/function의 예로 사용하는 표준 설명 | [외부 문헌] |
+| [OpenStax, *Calculus Volume 3*, §6.1 “Vector Fields”](https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields) | domain의 각 점에 vector를 배정하는 vector field 정의; unit vector field의 magnitude가 1이라는 정의 | [외부 문헌] |
+| [MIT OpenCourseWare, *Calculus*, Chapter 15 “Vector Fields”](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf) | 점마다 vector가 하나씩 있는 field라는 직관과 표준 vector-field 정의 | [외부 문헌] |
+| [MIT OpenCourseWare, *An Introduction to Vector Calculus*](https://ocw.mit.edu/courses/res-18-007-calculus-revisited-multivariable-calculus-fall-2011/5723c1da890523f30122615ae8458e16_MITRES_18_007_supp_notes03.pdf) | 위치에 따라 달라지는 temperature를 scalar quantity/function의 예로 사용하는 표준 설명 | [외부 문헌] |
 
 외부 source의 역할은 **field라는 수학 개념 자체의 표준 정의를 확인하는 것**이다. 이 표준 정의가 Planck-S²의 실제 전자 모델을 증명하는 것은 아니다.
 
