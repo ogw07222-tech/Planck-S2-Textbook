@@ -1,6 +1,6 @@
 # Figure Registry
 
-현재 설계된 핵심 그림은 F001–F097이다. 실제 집필 때 F1X 계열 보조 패널/연습용 그림이 추가될 수 있으나, 검증되지 않은 전자 내부구조를 관측된 실제 모습처럼 묘사하지 않는다. 모든 개념도는 필요한 경우 “개념도 — 실제 크기/비율 아님”을 붙인다.
+현재 설계된 핵심 그림은 F001–F097이다. 실제 집필 때 F1X/F2X 계열 보조 패널·연습용 그림이 추가될 수 있으나, 검증되지 않은 전자 내부구조를 관측된 실제 모습처럼 묘사하지 않는다. 모든 개념도는 필요한 경우 “개념도 — 실제 크기/비율 아님”을 붙인다.
 
 | ID | 권 | 장 | 그림 제목 | 교육 목적 | 필수 오해방지/한계 | 상태 |
 |---|---|---|---|---|---|---|
@@ -28,18 +28,19 @@
 | **F016** | 제1권 | 12장 | 닫힌 loop | 출발 configuration으로 돌아오는 경로 | 같은 endpoint가 같은 homotopy class를 뜻하지 않음 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F017** | 제1권 | 13장 | contractible vs noncontractible loop | 고무줄 수축 직관 | 개념도이며 실제 Planck-S² configuration space 모양 아님; 어느 loop가 nontrivial인지는 공간 topology에 의존 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
 | **F018** | 제1권 | 15장 | Z₂ 두 칸 상태표 | trivial/nontrivial, generator+generator=trivial | Z₂를 ±1 quantum phase 그 자체와 동일시하지 않기 | **ASSET PRESENT · DRAFT COMPLETE · AUDIT PASS** |
-| **F019** | 제2권 | 2장 | 3축 회전과 SO(3) | 3D orientation group 직관 | SO(3) group manifold 자체를 평범한 구로 그리지 않기 | NEEDED |
-| **F020** | 제2권 | 3장 | 360°/720° 회전 경로 비교 | 최종 orientation과 경로 class 구분 | belt trick은 비유이며 field proof가 아님 | NEEDED |
-| **F021** | 제2권 | 4장 | 공간회전으로 n_t 만들기 | domain precomposition의 시각화 | target 회전과 spatial 회전을 혼동하지 않기 | NEEDED |
-| **F022** | 제2권 | 5장 | rotation orbit가 configuration-space loop가 되는 그림 | 2π 후 field가 돌아오며 path는 남음 | physical quotient 여부는 뒤 Gate C에서 따로 | NEEDED |
-| **F023** | 제2권 | 6장 | evaluation fibration 계단 그림 | total/fiber/base와 boundary map | 정식 proof의 모든 기술조건을 그림이 대체하지 않음 | NEEDED |
-| **F024** | 제2권 | 7장 | G03 원래 추론 vs 수리된 추론 | 논리누락을 교육적으로 비교 | “틀린 전체 결론”이 아니라 proof presentation gap임을 명시 | NEEDED |
-| **F025** | 제2권 | 8장 | universal cover의 두 층 개념도 | nontrivial loop를 열린 경로로 펼침 | 실제 cover의 기하가 평면 두 장이라는 뜻 아님 | NEEDED |
-| **F026** | 제2권 | 10장 | FR +1 / −1 sector | deck transformation 아래 wavefunction character | 일반 global phase와 boundary condition을 구분 | NEEDED |
-| **F027** | 제2권 | 11장 | 2π→−1, 4π→+1 흐름 | Z₂+FR character 결합 | spin-1/2 완전 증명으로 확대 금지 | NEEDED |
-| **F028** | 제2권 | 12장 | SO(3)와 SU(2) double cover | 두 SU(2) 원소가 하나 SO(3) rotation에 대응 | SU(2)가 억지 장치라는 오해 방지 | NEEDED |
-| **F029** | 제2권 | 13장 | half-integer ladder j=1/2,3/2,… | topology가 허용하는 sector 범위 | j=1/2 자동 선택 금지 | NEEDED |
-| **F030** | 제2권 | 15장 | physical configuration-space fork 씨앗 | unquotiented vs quotient 개념 | Gate C의 최신 결론은 제5권에서 조건과 함께 | NEEDED |
+| **F2X01** | 제2권 | 1장 | 같은 최종 orientation, 다른 rotation path 질문 | endpoint equality와 path contractibility 분리 | standard SO(3) 개념도이며 physical Map₁/FR proof가 아님 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F019** | 제2권 | 2장 | 3축 회전과 SO(3) | 3D orientation group 직관 | SO(3) group manifold 자체를 평범한 구로 그리지 않기 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F020** | 제2권 | 3장 | 360°/720° 회전 경로 비교 | 최종 orientation과 경로 class 구분 | belt trick은 비유이며 field proof가 아님 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F021** | 제2권 | 4장 | 공간회전으로 n_t 만들기 | domain precomposition의 시각화 | target 회전과 spatial 회전을 혼동하지 않기 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F022** | 제2권 | 5장 | rotation orbit가 configuration-space loop가 되는 그림 | 2π 후 field가 돌아오며 path는 남음 | physical quotient 여부는 뒤 Gate C에서 따로 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F023** | 제2권 | 6장 | evaluation fibration 계단 그림 | total/fiber/base와 boundary map | 정식 proof의 모든 기술조건을 그림이 대체하지 않음 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F024** | 제2권 | 7장 | G03 원래 추론 vs 수리된 추론 | 논리누락을 교육적으로 비교 | “틀린 전체 결론”이 아니라 proof presentation gap임을 명시 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F025** | 제2권 | 8장 | universal cover의 두 층 개념도 | nontrivial loop를 열린 경로로 펼침 | 실제 cover의 기하가 평면 두 장이라는 뜻 아님 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F026** | 제2권 | 10장 | FR +1 / −1 sector | deck transformation 아래 wavefunction character | 일반 global phase와 boundary condition을 구분 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F027** | 제2권 | 11장 | 2π→−1, 4π→+1 흐름 | Z₂+FR character 결합 | spin-1/2 완전 증명으로 확대 금지 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F028** | 제2권 | 12장 | SO(3)와 SU(2) double cover | 두 SU(2) 원소가 하나 SO(3) rotation에 대응 | SU(2)가 억지 장치 또는 electron 내부 실제 공간이라는 오해 방지 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F029** | 제2권 | 13장 | half-integer ladder j=1/2,3/2,… | topology가 허용하는 sector 범위 | j=1/2 자동 선택 금지 | **ASSET PRESENT · DRAFT COMPLETE** |
+| **F030** | 제2권 | 15장 | physical configuration-space fork | unquotiented vs target quotient topology 비교 | 그림이 actual physical branch를 선택해 주지 않음; Gate C overall OPEN | **ASSET PRESENT · DRAFT COMPLETE** |
 | **F031** | 제3권 | 1장 | topology 지도와 energy 지형 | 같은 Q sector 내부 energy 차이 | topology가 dynamics를 정하지 않음 | NEEDED |
 | **F032** | 제3권 | 2장 | action = 모든 경로에 점수 붙이기 | 법칙 선택의 역할 | 고전 action 비유가 양자 path integral 전부를 뜻하지 않음 | NEEDED |
 | **F033** | 제3권 | 3장 | sigma-model spring-network 비유 | 이웃한 n 방향의 급격한 변화가 energy를 듦 | 실제 스프링이 존재한다는 뜻 아님 | NEEDED |
