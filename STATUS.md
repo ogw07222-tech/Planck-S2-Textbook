@@ -29,11 +29,25 @@
 | Chapter | Status | Audit |
 |---|---|---|
 | 1 — SO(3)과 물리적 회전 | DRAFT COMPLETE | AUDIT PENDING |
-| 2 onward | NOT STARTED | — |
+| 2 — 세 축으로 돌린다는 것 | DRAFT COMPLETE | AUDIT PENDING |
+| 3 — 360°와 720° | DRAFT COMPLETE | AUDIT PENDING |
+| 4 — 회전은 장을 어떻게 바꾸는가 | DRAFT COMPLETE | AUDIT PENDING |
+| 5 — 회전 orbit는 왜 loop가 되는가 | DRAFT COMPLETE | AUDIT PENDING |
+| 6 — evaluation fibration | DRAFT COMPLETE | AUDIT PENDING |
+| 7 — generator를 정말 찾았는가 | DRAFT COMPLETE | AUDIT PENDING |
+| 8 — loop를 펼쳐 올리기 | DRAFT COMPLETE | AUDIT PENDING |
+| 9 — cover의 두 층을 잇는 규칙 | DRAFT COMPLETE | AUDIT PENDING |
+| 10 — FR character | DRAFT COMPLETE | AUDIT PENDING |
+| 11 — 2π→−1, 4π→+1 | DRAFT COMPLETE | AUDIT PENDING |
+| 12 — SO(3)와 SU(2) | DRAFT COMPLETE | AUDIT PENDING |
+| 13 — half-integer representation | DRAFT COMPLETE | AUDIT PENDING |
+| 14 — 왜 아직 spin-1/2 증명이 아닌가 | DRAFT COMPLETE | AUDIT PENDING |
+| 15 — Gate C의 갈림길 | DRAFT COMPLETE | AUDIT PENDING |
+| Closing | DRAFT COMPLETE | AUDIT PENDING |
 
-**Current next action:** Independent audit of Volume 2 Chapter 1.
+**Current next action:** Independent full-batch audit of Volume 2 Chapters 1–15 + Closing.
 
-**DO NOT START:** Volume 2 Chapter 2 before Chapter 1 independent audit PASS.
+**DO NOT START:** Volume 3 production before Volume 2 independent final-batch audit is completed.
 
 ## Canonical status rule
 
