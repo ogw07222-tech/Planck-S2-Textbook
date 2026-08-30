@@ -22,9 +22,18 @@
 | 16 | DRAFT COMPLETE | PASS |
 | Closing | DRAFT COMPLETE | PASS |
 
-**Current next action:** Begin Volume 2 DRAFT production from `volume-2/README.md`, after re-reading MASTER.md and sources/proof-status.md.
+**Volume 1 final audit:** PASS — Volume 2 DRAFT production approved.
 
-**Volume 1 final audit:** PASS — Volume 2 DRAFT production approved. Volume 2 scientific PASS remains independent-audit only.
+## Volume 2
+
+| Chapter | Status | Audit |
+|---|---|---|
+| 1 — SO(3)과 물리적 회전 | DRAFT COMPLETE | AUDIT PENDING |
+| 2 onward | NOT STARTED | — |
+
+**Current next action:** Independent audit of Volume 2 Chapter 1.
+
+**DO NOT START:** Volume 2 Chapter 2 before Chapter 1 independent audit PASS.
 
 ## Canonical status rule
 
