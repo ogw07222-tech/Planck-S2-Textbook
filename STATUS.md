@@ -28,7 +28,7 @@
 
 | Chapter | Status | Audit |
 |---|---|---|
-| 1 — SO(3)과 물리적 회전 | DRAFT COMPLETE | AUDIT PENDING |
+| 1 — SO(3)과 물리적 회전 | DRAFT COMPLETE | REVISE — F2X01 VISUAL QA |
 | 2 — 세 축으로 돌린다는 것 | DRAFT COMPLETE | AUDIT PENDING |
 | 3 — 360°와 720° | DRAFT COMPLETE | AUDIT PENDING |
 | 4 — 회전은 장을 어떻게 바꾸는가 | DRAFT COMPLETE | AUDIT PENDING |
@@ -45,9 +45,11 @@
 | 15 — Gate C의 갈림길 | DRAFT COMPLETE | AUDIT PENDING |
 | Closing | DRAFT COMPLETE | AUDIT PENDING |
 
-**Current next action:** Independent full-batch audit of Volume 2 Chapters 1–15 + Closing.
+**Current next action:** Revise Volume 2 Chapter 1 figure F2X01, then independent re-audit of Chapter 1.
 
-**DO NOT START:** Volume 3 production before Volume 2 independent final-batch audit is completed.
+**DO NOT AUDIT:** Volume 2 Chapter 2 before Chapter 1 independent re-audit PASS.
+
+**DO NOT START:** Volume 3 production before Volume 2 Chapters 1–15 + Closing independent audits are all complete.
 
 ## Canonical status rule
 
